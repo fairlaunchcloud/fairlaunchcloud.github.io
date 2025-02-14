@@ -1,179 +1,249 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 20px;
-}
-
-.container {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 24px;
-}
-
-h3 {
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 20px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-label {
-  font-weight: bold;
-  color: #555;
-}
-
-input, select {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  width: 100%;
-}
-
-button {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 5px 0;
-  width: 100%;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-#status {
-  margin-top: 10px;
-  color: #555;
-}
-
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  h3 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #status {
+    margin-top: 10px;
+    color: #555;
+  }
+  /* Styling untuk box link referral */
 #referralLinkContainer {
-  margin-top: 10px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.referral-link-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: #f4f4f9;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-#referralLink {
-  color: #000000;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-#copyReferralLinkBtn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.copy-icon {
-  font-size: 16px;
-  background: black;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.copy-icon:hover {
-  color: #ffffff;
-  background: blue;
-}
-
-#contributeBtn {
-  display: none;
-}
-
-#contractFairlaunch {
-  margin-bottom: 10px;
-  margin-top: 5px;
-  font-weight: bold;
-}
-
-/* Media Queries untuk Responsiveness */
-@media (max-width: 600px) {
-  h1 {
-      font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .referral-link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f4f4f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #referralLink {
+    color: #000000;
+    text-decoration: none;
+    /* word-break: break-all; */
+    overflow: hidden;
+  }
+  
+  /* #referralLink:hover {
+    text-decoration: underline;
+  } */
+  
+  /* Styling untuk tombol copy */
+  #copyReferralLinkBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .copy-icon {
+    font-size: 16px;
+    background: black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .copy-icon:hover {
+    color: #ffffff;
+    background: blue;
   }
 
-  h3 {
-      font-size: 18px;
+  #contributeBtn {
+    display: none; /* Sembunyikan tombol Contribute secara default */
+  }
+  #contractFairlaunch{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+
+/* Tambahkan media query untuk layar dengan lebar maksimum 600px (ukuran mobile) */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
   }
 
   .container {
-      padding: 15px;
+    padding: 15px; /* Kurangi padding pada container */
+    max-width: 100%; /* Lebar container mengikuti lebar layar */
+    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
+    box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
   }
 
-  input, select, button {
-      font-size: 14px;
-  }
-
-  .copy-icon {
-      font-size: 14px;
-      padding: 8px;
-  }
-}
-
-@media (max-width: 400px) {
   h1 {
-      font-size: 18px;
+    font-size: 24px; /* Perkecil ukuran font untuk judul */
+    margin-bottom: 15px;
   }
 
   h3 {
-      font-size: 16px;
+    font-size: 18px; /* Perkecil ukuran font untuk subjudul */
+    margin-bottom: 15px;
   }
 
-  .container {
-      padding: 10px;
+  .form {
+    gap: 8px; /* Kurangi jarak antar elemen form */
   }
 
-  input, select, button {
-      font-size: 12px;
+  input, select {
+    font-size: 14px; /* Perkecil ukuran font untuk input dan select */
+    padding: 8px; /* Kurangi padding pada input dan select */
+  }
+
+  button {
+    font-size: 14px; /* Perkecil ukuran font untuk tombol */
+    padding: 8px; /* Kurangi padding pada tombol */
+  }
+
+  .referral-link-box {
+    flex-direction: column; /* Ubah tata letak menjadi vertikal */
+    gap: 5px; /* Kurangi jarak antar elemen */
+    padding: 8px; /* Kurangi padding pada box referral link */
+  }
+
+  #referralLink {
+    font-size: 14px; /* Perkecil ukuran font untuk link referral */
   }
 
   .copy-icon {
-      font-size: 12px;
-      padding: 6px;
+    font-size: 14px; /* Perkecil ukuran ikon copy */
+    padding: 8px; /* Kurangi padding pada ikon copy */
+  }
+
+  #contractFairlaunch {
+    font-size: 14px; /* Perkecil ukuran font untuk teks kontrak fairlaunch */
   }
 }
+
+/* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 5px; /* Padding lebih kecil untuk layar yang sangat kecil */
+    height: auto; /* Tinggi body disesuaikan dengan konten */
+    min-height: 100vh; /* Pastikan body tetap memenuhi layar */
+  }
+
+  .container {
+    padding: 10px; /* Padding lebih kecil untuk container */
+    max-width: 100%; /* Lebar container mengikuti lebar layar */
+    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
+    box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+  }
+
+  h1 {
+    font-size: 20px; /* Ukuran font lebih kecil untuk judul */
+    margin-bottom: 10px; /* Jarak bawah lebih kecil */
+  }
+
+  h3 {
+    font-size: 16px; /* Ukuran font lebih kecil untuk subjudul */
+    margin-bottom: 10px; /* Jarak bawah lebih kecil */
+  }
+
+  .form {
+    gap: 5px; /* Jarak antar elemen form lebih kecil */
+  }
+
+  input, select {
+    font-size: 12px; /* Ukuran font lebih kecil untuk input dan select */
+    padding: 6px; /* Padding lebih kecil untuk input dan select */
+  }
+
+  button {
+    font-size: 12px; /* Ukuran font lebih kecil untuk tombol */
+    padding: 6px; /* Padding lebih kecil untuk tombol */
+  }
+
+  .referral-link-box {
+    flex-direction: column; /* Tata letak vertikal untuk layar kecil */
+    gap: 5px; /* Jarak antar elemen lebih kecil */
+    padding: 6px; /* Padding lebih kecil untuk box referral link */
+  }
+
+  #referralLink {
+    font-size: 12px; /* Ukuran font lebih kecil untuk link referral */
+  }
+
+  .copy-icon {
+    font-size: 12px; /* Ukuran ikon lebih kecil */
+    padding: 6px; /* Padding lebih kecil untuk ikon copy */
+  }
+
+  #contractFairlaunch {
+    font-size: 12px; /* Ukuran font lebih kecil untuk teks kontrak fairlaunch */
+  }
+}
+  
