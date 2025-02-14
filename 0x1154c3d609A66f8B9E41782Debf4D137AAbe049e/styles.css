@@ -131,6 +131,64 @@ body {
     font-weight: bold;
   }
 
+/* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 5px; /* Padding lebih kecil untuk layar yang sangat kecil */
+    height: auto; /* Tinggi body disesuaikan dengan konten */
+    min-height: 100vh; /* Pastikan body tetap memenuhi layar */
+  }
+
+  .container {
+    padding: 10px; /* Padding lebih kecil untuk container */
+    max-width: 100%; /* Lebar container mengikuti lebar layar */
+    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
+    box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+  }
+
+  h1 {
+    font-size: 20px; /* Ukuran font lebih kecil untuk judul */
+    margin-bottom: 10px; /* Jarak bawah lebih kecil */
+  }
+
+  h3 {
+    font-size: 16px; /* Ukuran font lebih kecil untuk subjudul */
+    margin-bottom: 10px; /* Jarak bawah lebih kecil */
+  }
+
+  .form {
+    gap: 5px; /* Jarak antar elemen form lebih kecil */
+  }
+
+  input, select {
+    font-size: 12px; /* Ukuran font lebih kecil untuk input dan select */
+    padding: 6px; /* Padding lebih kecil untuk input dan select */
+  }
+
+  button {
+    font-size: 12px; /* Ukuran font lebih kecil untuk tombol */
+    padding: 6px; /* Padding lebih kecil untuk tombol */
+  }
+
+  .referral-link-box {
+    flex-direction: column; /* Tata letak vertikal untuk layar kecil */
+    gap: 5px; /* Jarak antar elemen lebih kecil */
+    padding: 6px; /* Padding lebih kecil untuk box referral link */
+  }
+
+  #referralLink {
+    font-size: 12px; /* Ukuran font lebih kecil untuk link referral */
+  }
+
+  .copy-icon {
+    font-size: 12px; /* Ukuran ikon lebih kecil */
+    padding: 6px; /* Padding lebih kecil untuk ikon copy */
+  }
+
+  #contractFairlaunch {
+    font-size: 12px; /* Ukuran font lebih kecil untuk teks kontrak fairlaunch */
+  }
+}
 
   /* Tambahkan media query untuk layar dengan lebar maksimum 600px (ukuran mobile) */
 @media only screen and (max-width: 600px) {
