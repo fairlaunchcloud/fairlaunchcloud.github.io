@@ -1,4 +1,4 @@
-const CHAIN_ID = "0x61"; // 97 dalam desimal
+const CHAIN_ID = "0x61"; 
 
 // Ganti dengan alamat smart contract
 const contractAddress = "0x1A9BD15BfD9EFd528aA7B59e81933840d0394973";
