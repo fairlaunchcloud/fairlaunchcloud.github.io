@@ -1712,7 +1712,7 @@ const contractABI =
 ];
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x5EFeA68549fA4B60c422637e0597FC63e7830c50", // Contract ID token Payment (USDT)
+    PAYTOKENA: "0x4400Ed4700579Bb51463954aAf004D8FF32dedbb", // Contract ID token Payment (USDT)
     PAYTOKENB: "0x...", // Alamat Token B
     PAYTOKENC: "0x...", // Alamat Token C
     PAYTOKEND: "0x...", // Alamat Token D
