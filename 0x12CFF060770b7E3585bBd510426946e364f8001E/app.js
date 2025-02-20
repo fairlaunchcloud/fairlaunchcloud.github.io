@@ -1,7 +1,7 @@
 const CHAIN_ID = "0x89"; 
 
 // Ganti dengan alamat smart contract
-const contractAddress ="0xb68894A6a48F3329171D45a12c1A7d14c4cbDc10";
+const contractAddress ="0x12CFF060770b7E3585bBd510426946e364f8001E";
 const contractABI = [
 	{
 		"inputs": [
@@ -2500,7 +2500,7 @@ const TOKEN_ADDRESSES = {
   };
 
 // Alamat referral default
-const DEFAULT_REFERRAL_ADDRESS = "0xb68894A6a48F3329171D45a12c1A7d14c4cbDc10";
+const DEFAULT_REFERRAL_ADDRESS = "0x12CFF060770b7E3585bBd510426946e364f8001E";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 // Inisialisasi provider dan signer
 let provider, signer, contract;
@@ -2563,8 +2563,8 @@ function getReferralFromUrl() {
               symbol: "POL",
               decimals: 18,
             },
-            rpcUrls: ["https://data-seed-prebsc-1-s2.bnbchain.org:8545"],
-            blockExplorerUrls: ["https://testnet.bscscan.com"],
+            rpcUrls: ["https://polygon-rpc.com"],
+            blockExplorerUrls: ["https://polygonscan.com"],
           },
         ],
       });
