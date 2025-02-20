@@ -47,7 +47,7 @@ body {
   
   button {
     padding: 10px;
-    background-color: #6e8950;
+    background-color: cadetblue;
     color: white;
     border: none;
     border-radius: 4px;
@@ -57,7 +57,7 @@ body {
   }
   
   button:hover {
-    background-color: #8aaf60;
+    background-color: #9ee0ff;
   }
   
   button:disabled {
