@@ -2572,7 +2572,7 @@ function getReferralFromUrl() {
       console.error("Error switching to BSC:", error);
       Swal.fire({
         title: "Error",
-        text: "Failed to switch to Binance Smart Chain. Please switch manually.",
+        text: "Failed to switch to Polygon. Please switch manually.",
         icon: "error",
         confirmButtonText: "OK",
       });
@@ -2587,7 +2587,7 @@ function getReferralFromUrl() {
       if (chainId !== CHAIN_ID) {
         const { isConfirmed } = await Swal.fire({
           title: "Network Mismatch",
-          text: "You are not connected to Binance Smart Chain Testnet. Do you want to switch to BSC Testnet?",
+          text: "You are not connected to Polygon Mainnet. Do you want to switch to BSC Testnet?",
           icon: "warning",
           showCancelButton: true,
           confirmButtonText: "Switch",
@@ -2687,7 +2687,7 @@ function getReferralFromUrl() {
       console.error("Error connecting wallet:", error);
       Swal.fire({
         title: "Error",
-        text: "Failed to connect wallet. Please check console for details.",
+        text: "Failed to connect wallet. ",
         icon: "error",
         confirmButtonText: "OK",
       });
@@ -2722,7 +2722,7 @@ function getReferralFromUrl() {
 	  approveBtn.disabled = false;
       Swal.fire({
         title: "Error",
-        text: "Failed to approve allowance. Please check console for details.",
+        text: "Failed to approve allowance. ",
         icon: "error",
         confirmButtonText: "OK",
       });
@@ -2776,7 +2776,7 @@ function getReferralFromUrl() {
       console.error("Error contributing:", error);
       Swal.fire({
         title: "Error",
-        text: "Contribution failed. Please check console for details.",
+        text: "Contribution failed. ",
         icon: "error",
         confirmButtonText: "OK",
       });
