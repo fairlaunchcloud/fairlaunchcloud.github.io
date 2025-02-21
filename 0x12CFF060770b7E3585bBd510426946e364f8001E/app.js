@@ -2587,7 +2587,7 @@ function getReferralFromUrl() {
       if (chainId !== CHAIN_ID) {
         const { isConfirmed } = await Swal.fire({
           title: "Network Mismatch",
-          text: "You are not connected to Polygon Mainnet. Do you want to switch to BSC Testnet?",
+          text: "You are not connected to Polygon Mainnet. Please Check Your RPC Network!",
           icon: "warning",
           showCancelButton: true,
           confirmButtonText: "Switch",
