@@ -2500,7 +2500,7 @@ const TOKEN_ADDRESSES = {
   };
 
 // Alamat referral default
-const DEFAULT_REFERRAL_ADDRESS = "0x12CFF060770b7E3585bBd510426946e364f8001E";
+const DEFAULT_REFERRAL_ADDRESS = "0x12CFF06070b7E3585bBd510426946e364f8001E";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 // Inisialisasi provider dan signer
 let provider, signer, contract;
@@ -2687,7 +2687,7 @@ function getReferralFromUrl() {
       console.error("Error connecting wallet:", error);
       Swal.fire({
         title: "Error",
-        text: "Failed to connect wallet. ",
+        text: "Failed to connect wallet.",
         icon: "error",
         confirmButtonText: "OK",
       });
@@ -2722,7 +2722,7 @@ function getReferralFromUrl() {
 	  approveBtn.disabled = false;
       Swal.fire({
         title: "Error",
-        text: "Failed to approve allowance. ",
+        text: "Failed to approve allowance.",
         icon: "error",
         confirmButtonText: "OK",
       });
@@ -2776,7 +2776,7 @@ function getReferralFromUrl() {
       console.error("Error contributing:", error);
       Swal.fire({
         title: "Error",
-        text: "Contribution failed. ",
+        text: "Contribution failed.",
         icon: "error",
         confirmButtonText: "OK",
       });
