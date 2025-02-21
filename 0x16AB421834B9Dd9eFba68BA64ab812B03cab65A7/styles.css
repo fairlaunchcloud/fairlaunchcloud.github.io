@@ -57,11 +57,11 @@ body {
   }
   
   button:hover {
-    background-color: white;
+    background-color: #c5c5c5;
   }
   
   button:disabled {
-    background-color: white;
+    background-color: #c0c0c0;
     cursor: not-allowed;
   }
   
