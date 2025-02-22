@@ -1,7 +1,7 @@
 const CHAIN_ID = "0x89"; 
 
 // Ganti dengan alamat smart contract
-const contractAddress ="0x12CFF060770b7E3585bBd510426946e364f8001E";
+const contractAddress ="0x5BdCac26281fec02c9Eff6525849d7477F56F557";
 const contractABI = [
 	{
 		"inputs": [
@@ -2492,7 +2492,7 @@ const contractABI = [
 ];
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
+    PAYTOKENA: "0x554cd6bdD03214b10AafA3e0D4D42De0C5D2937b", // Contract ID token Payment (USDT)
     PAYTOKENB: "0x...", // Alamat Token B
     PAYTOKENC: "0x...", // Alamat Token C
     PAYTOKEND: "0x...", // Alamat Token D
@@ -2500,7 +2500,7 @@ const TOKEN_ADDRESSES = {
   };
 
 // Alamat referral default
-const DEFAULT_REFERRAL_ADDRESS = "0x12CFF060770b7E3585bBd510426946e364f8001E";
+const DEFAULT_REFERRAL_ADDRESS = "0x5BdCac26281fec02c9Eff6525849d7477F56F557";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 // Inisialisasi provider dan signer
 let provider, signer, contract;
