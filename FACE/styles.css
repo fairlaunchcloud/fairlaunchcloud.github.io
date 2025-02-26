@@ -233,12 +233,12 @@ h3 {
 }
 
 input, select {
-  font-size: 12px; /* Ukuran font lebih kecil untuk input dan select */
+  font-size: 20px; /* Ukuran font lebih kecil untuk input dan select */
   padding: 6px; /* Padding lebih kecil untuk input dan select */
 }
 
 button {
-  font-size: 12px; /* Ukuran font lebih kecil untuk tombol */
+  font-size: 20px; /* Ukuran font lebih kecil untuk tombol */
   padding: 6px; /* Padding lebih kecil untuk tombol */
 }
 
