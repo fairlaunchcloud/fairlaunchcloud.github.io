@@ -1,12 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  /* background-color: #f4f4f9; */
-  background: linear-gradient(162deg, #3fc3ee, #ebf3f359);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  top: 1% !important;
+  background: transparent;
+  background-image: url(https://media.giphy.com/media/fyad3Zy4KPso5IzcL9/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: animateBackground 60slinear infinite;
 }
 
 .container {
