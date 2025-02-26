@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(162deg, #3fc3ee, #ebf3f359);
+  background: linear-gradient(260deg, #0a4a5e, #0c1416);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +207,7 @@ body {
 }
 
 .container {
-  background: linear-gradient(61deg, #0a4a5e, #00000085);
+  background: linear-gradient(183deg, #0a4a5e, #000000);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
