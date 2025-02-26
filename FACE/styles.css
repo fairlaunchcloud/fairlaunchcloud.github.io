@@ -10,14 +10,14 @@ body {
 }
 
 .container {
-  background: linear-gradient(177deg, #c96008, #00000085);
+  background: linear-gradient(247deg, #3fc3ee, #00000085);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 h1 {
@@ -160,8 +160,8 @@ h1 {
 }
 
 h3 {
-  font-size: 18px; /* Perkecil ukuran font untuk subjudul */
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .form {
