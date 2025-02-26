@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(169deg, #d0ad00, #3d373759);
+  background: linear-gradient(123deg, #3fc3ee, #ebf3f359);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,8 +51,8 @@ input, select {
 
 button {
   padding: 10px;
-  background-color: #d0ad00;
-  color: white;
+  background-color: #3fc3eeed;
+  color: midnightblue;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -131,7 +131,7 @@ button:disabled {
 #contributeBtn {
   display: none; /* Sembunyikan tombol Contribute secara default */
 }
-#contractFairlaunch{
+#contractFairlaunch {
   margin-bottom: 10px;
   margin-top: 5px;
   font-weight: bold;
