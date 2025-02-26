@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(123deg, #3fc3ee, #ebf3f359);
+  background: linear-gradient(162deg, #3fc3ee, #ebf3f359);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background: linear-gradient(247deg, #3fc3ee, #00000085);
+  background: linear-gradient(221deg, #3fc3ee, #00000085);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -66,7 +66,7 @@ button:hover {
 }
 
 button:disabled {
-  background-color: #ccc;
+  background-color: #ffffc2;
   cursor: not-allowed;
 }
 
@@ -118,14 +118,14 @@ button:disabled {
 
 .copy-icon {
   font-size: 16px;
-  background: #d0ad00;
+  background: #3fc3ee;
   border-radius: 10px;
   padding: 10px;
 }
 
 .copy-icon:hover {
   color: #ffffff;
-  background: #c05f09;
+  background: #0927c0;
 }
 
 #contributeBtn {
