@@ -1,8 +1,9 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(260deg, #0a4a5e, #0c1416);
-  display: flex;
+  background: linear-gradient(314deg, #0a4a5e, #19191a);
+  display: flex
+;
   justify-content: center;
   align-items: center;
   height: 100vh;
