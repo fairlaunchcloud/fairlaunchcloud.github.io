@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(162deg, #3fc3ee, #ebf3f359);
+  background: linear-gradient(349deg, #00396e, #00efef59);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,10 +200,15 @@ button {
 
 /* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
 @media only screen and (max-width: 480px) {
-body {
-  padding: 5px; /* Padding lebih kecil untuk layar yang sangat kecil */
-  height: auto; /* Tinggi body disesuaikan dengan konten */
-  min-height: 100vh; /* Pastikan body tetap memenuhi layar */
+  body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f9; */
+    background: linear-gradient(349deg, #00396e, #00efef59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
