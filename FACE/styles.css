@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(349deg, #00396e, #00efef59);
+  background: linear-gradient(162deg, #3fc3ee, #ebf3f359);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,26 +200,18 @@ button {
 
 /* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
 @media only screen and (max-width: 480px) {
-  body {
-    font-family: Arial, sans-serif;
-    /* background-color: #f4f4f9; */
-    background: linear-gradient(349deg, #00396e, #00efef59);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+body {
+  padding: 5px; /* Padding lebih kecil untuk layar yang sangat kecil */
+  height: auto; /* Tinggi body disesuaikan dengan konten */
+  min-height: 100vh; /* Pastikan body tetap memenuhi layar */
 }
 
 .container {
-  background: linear-gradient(61deg, #0a4a5e, #00000085);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    color: #fff;
+  padding: 10px; /* Padding lebih kecil untuk container */
+  max-width: 100%; /* Lebar container mengikuti lebar layar */
+  border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
+  box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+}
 
 h1 {
   font-size: 20px; /* Ukuran font lebih kecil untuk judul */
