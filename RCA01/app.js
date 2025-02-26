@@ -1,5 +1,5 @@
 const CHAIN_ID = "0x89"; 
-const LINKSHORT = "RCA02";
+const LINKSHORT = "RCA01";
 
 // Ganti dengan alamat smart contract
 const contractAddress ="0x96715BE1Cd356f3fB1522712F35Cf0b3174088Fe";
