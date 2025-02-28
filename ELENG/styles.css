@@ -10,14 +10,15 @@ body {
   }
   
   .container {
-    background: linear-gradient(175deg, #3fc3ee, #d4ed0885);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    color: #093d87;
+  background: linear-gradient(175deg, #3fc3ee, #d4ed0885);
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 0px 50px rgba(243, 243, 241, 0.925);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #093d87;
   }
   
   h1 {
@@ -203,10 +204,19 @@ body {
   }
 
   .container {
-    padding: 10px; /* Padding lebih kecil untuk container */
-    max-width: 100%; /* Lebar container mengikuti lebar layar */
-    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
-    box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+    /* padding: 10px; Padding lebih kecil untuk container */
+    /* max-width: 100%; Lebar container mengikuti lebar layar */
+    /* border-radius: 0; Hilangkan border-radius untuk tampilan full-width */
+    /* box-shadow: none; Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+    background: linear-gradient(175deg, #3fc3ee, #d4ed0885);
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 0px 50px rgba(243, 243, 241, 0.925);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #093d87;
   }
 
   h1 {
