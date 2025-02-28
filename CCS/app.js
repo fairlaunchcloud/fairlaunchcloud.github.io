@@ -1,4 +1,5 @@
-const CHAIN_ID = "0x89"; 
+const CHAIN_ID = "0x89";
+const LINKSHORT = "CCS";
 
 // Ganti dengan alamat smart contract
 const contractAddress ="0x98ea40C5813e5B42ebD9E28AF88fdD8f7fB323BD";
@@ -2512,7 +2513,7 @@ function shortenAddress(address) {
   
   // Fungsi untuk menghasilkan link referral
   function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${contractAddress}`; // Gunakan contractAddress
+    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`; // Gunakan contractAddress
     return `${baseUrl}?refId=${address}`;
   }
   
