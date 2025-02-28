@@ -146,7 +146,7 @@ body {
 }
 
 .container {
-  background: linear-gradient(61deg, #0a4a5e, #00000085);
+  background: linear-gradient(317deg, #541420, #100808f0);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -203,13 +203,17 @@ button {
 /* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
 @media only screen and (max-width: 480px) {
 body {
-  padding: 5px; /* Padding lebih kecil untuk layar yang sangat kecil */
-  height: auto; /* Tinggi body disesuaikan dengan konten */
-  min-height: 100vh; /* Pastikan body tetap memenuhi layar */
+  background: linear-gradient(347deg, #000000, #f50733);
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  background: linear-gradient(183deg, #0a4a5e, #000000);
+  background: linear-gradient(317deg, #541420, #100808f0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
