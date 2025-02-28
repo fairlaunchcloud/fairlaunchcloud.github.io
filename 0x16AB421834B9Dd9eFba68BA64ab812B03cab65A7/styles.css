@@ -52,7 +52,7 @@ input, select {
 
 button {
   padding: 10px;
-  background-color: #f1ecbced;
+  background-color: #fdffbe;
   color: #a50721;
   border: none;
   border-radius: 4px;
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-  background-color: #dee3c7;
+  background-color: #e1f779;
 }
 
 button:disabled {
