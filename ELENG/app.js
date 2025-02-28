@@ -1,5 +1,5 @@
 const CHAIN_ID = "0x89"; 
-const LINKSHORT = "TJI";
+const LINKSHORT = "ELENG";
 
 // Ganti dengan alamat smart contract
 const contractAddress ="0xcbE93D864E3433a7a7813a530B2788Aa7bBCf4E8";
