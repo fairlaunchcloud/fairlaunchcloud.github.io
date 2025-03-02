@@ -1,8 +1,8 @@
 const CHAIN_ID = "0x89";
-const LINKSHORT = "CCS";
+const LINKSHORT = "CCS-RFIDR";
 
 // Ganti dengan alamat smart contract
-const contractAddress ="0x98ea40C5813e5B42ebD9E28AF88fdD8f7fB323BD";
+const contractAddress ="0xF18ab6D26f6489381B09460e7554E9FC04ffDFBB";
 const contractABI = [
 	{
 		"inputs": [
@@ -2501,7 +2501,7 @@ const TOKEN_ADDRESSES = {
   };
 
 // Alamat referral default
-const DEFAULT_REFERRAL_ADDRESS = "0x98ea40C5813e5B42ebD9E28AF88fdD8f7fB323BD";
+const DEFAULT_REFERRAL_ADDRESS = "0xF18ab6D26f6489381B09460e7554E9FC04ffDFBB";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 // Inisialisasi provider dan signer
 let provider, signer, contract;
