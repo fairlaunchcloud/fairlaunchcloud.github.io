@@ -1,9 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(314deg, #2b00bd, #19191a);
-  display: flex
-;
+  background: linear-gradient(1deg, #4e087f, #19191a);
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -11,11 +10,11 @@ body {
 }
 
 .container {
-  background: linear-gradient(61deg, #1b0a5e, #00000085);
+  background: linear-gradient(3deg, #5a0969, #000000);
   padding: 20px;
   border-radius: 8px;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  box-shadow: 0px 0px 12px rgb(255 255 255 / 80%);
+  box-shadow: 0px 0px 20px rgb(255 255 255 / 80%);
   max-width: 400px;
   width: 100%;
   text-align: center;
@@ -53,8 +52,8 @@ input, select {
 
 button {
   padding: 10px;
-  background-color: #3fc3eeed;
-  color: midnightblue;
+  background-color: #e5f3ed;
+  color: #120116;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -64,11 +63,11 @@ button {
 }
 
 button:hover {
-  background-color: #c0cfcf;
+  background-color: #d290f5;
 }
 
 button:disabled {
-  background-color: #ffffc2;
+  background-color: #d290f5;
   cursor: not-allowed;
 }
 
@@ -120,14 +119,14 @@ button:disabled {
 
 .copy-icon {
   font-size: 16px;
-  background: #3fc3ee;
+  background: #d290f5;
   border-radius: 10px;
   padding: 10px;
 }
 
 .copy-icon:hover {
   color: #ffffff;
-  background: #0927c0;
+  background: #4b0567;
 }
 
 #contributeBtn {
@@ -203,16 +202,22 @@ button {
 /* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
 @media only screen and (max-width: 480px) {
 body {
-  padding: 5px; /* Padding lebih kecil untuk layar yang sangat kecil */
-  height: auto; /* Tinggi body disesuaikan dengan konten */
-  min-height: 100vh; /* Pastikan body tetap memenuhi layar */
+  /* padding: 5px; Padding lebih kecil untuk layar yang sangat kecil */
+  /* height: auto; Tinggi body disesuaikan dengan konten */
+  /* min-height: 100vh; Pastikan body tetap memenuhi layar */
+  background: linear-gradient(135deg, #660677, #19191a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  background: linear-gradient(183deg, #1b0a5e, #000000);
+  background: linear-gradient(252deg, #5a0969, #000000);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 0px 12px rgb(255 255 255 / 80%);
+  box-shadow: 0px 0px 20px rgb(255 255 255 / 80%);
   max-width: 400px;
   width: 100%;
   text-align: center;
