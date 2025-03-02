@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(1deg, #a50721, #0e0104);
+  background: linear-gradient(1deg, #07a3a5, #0e0104);
   display: flex
 ;
   justify-content: center;
@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  background: linear-gradient(166deg, #a50721, #00000085);
+  background: linear-gradient(166deg, #07a3a5, #00000085);
   padding: 20px;
   border-radius: 8px;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -53,8 +53,8 @@ input, select {
 
 button {
   padding: 10px;
-  background-color: #fdffbe;
-  color: #a50721;
+  background-color: #fdffb0;
+  color: #020f41e3;
   border: none;
   border-radius: 4px;
   font-size: 20px;
@@ -64,11 +64,12 @@ button {
 }
 
 button:hover {
-  background-color: #e1f779;
+  background-color: #fefeff;
+  color: #4c9d9a;
 }
 
 button:disabled {
-  background-color: #ffffc2;
+  background-color: #ebebc7;
   cursor: not-allowed;
 }
 
@@ -99,7 +100,7 @@ button:disabled {
   /* word-break: break-all; */
   overflow: hidden;
   font-weight: 600;
-  color: #730e29;
+  color: #326667;
 }
 
 /* #referralLink:hover {
@@ -120,15 +121,15 @@ button:disabled {
 
 .copy-icon {
   font-size: 16px;
-  color: #f0f528;
-  background: #a50721;
+  color: #eef173;
+  background: #07a3a5;
   border-radius: 10px;
   padding: 10px;
 }
 
 .copy-icon:hover {
-  color: #ffffff;
-  background: #eb7287;
+  color: #faffd5;
+  background: #9bb5c1;
 }
 
 #contributeBtn {
@@ -210,7 +211,7 @@ body {
 }
 
 .container {
-  background: linear-gradient(166deg, #a50721, #00000085);
+  background: linear-gradient(2deg, #07a3a5, #00000085);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 50px rgb(255 255 255 / 80%);
