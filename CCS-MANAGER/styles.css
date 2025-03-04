@@ -64,7 +64,7 @@ button {
 }
 
 button:hover {
-  background-color: #c0cfcf;
+  background-color: #fffb99;
 }
 
 button:disabled {
@@ -98,7 +98,7 @@ button:disabled {
   text-decoration: none;
   /* word-break: break-all; */
   overflow: hidden;
-  font-weight: 600;
+  font-weight: 540;
   color: #02396c;
 }
 
@@ -120,14 +120,15 @@ button:disabled {
 
 .copy-icon {
   font-size: 16px;
+  color: #051957;
   background: #3fc3ee;
   border-radius: 10px;
   padding: 10px;
 }
 
 .copy-icon:hover {
-  color: #ffffff;
-  background: #0927c0;
+  color: #6e7881;
+  background: #fbf674;
 }
 
 #contributeBtn {
