@@ -99,8 +99,8 @@ button:disabled {
   text-decoration: none;
   /* word-break: break-all; */
   overflow: hidden;
-  font-weight: 600;
-  color: #326667;
+  font-weight: 500;
+  color: #0d4849;
 }
 
 /* #referralLink:hover {

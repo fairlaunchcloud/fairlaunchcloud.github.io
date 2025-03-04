@@ -1,5 +1,5 @@
 const CHAIN_ID = "0x89";
-const LINKSHORT = "CCS-BRAND";
+const LINKSHORT = "CCS-STARTER";
 
 // Ganti dengan alamat smart contract
 const contractAddress ="0x2eAA31D1f5D2B05dD9dCb64B06BED2274821fAf9";
@@ -2493,7 +2493,7 @@ const contractABI = [
 ];
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xb0de690CA7C204608062765507e280d0163D452C", // Contract ID token Payment (USDT)
+    PAYTOKENA: "0x91Faa9fA243EaF35981f5563ec67e9bF0d8DFAEE", // Contract ID token Payment (USDT)
     PAYTOKENB: "0x...", // Alamat Token B
     PAYTOKENC: "0x...", // Alamat Token C
     PAYTOKEND: "0x...", // Alamat Token D
