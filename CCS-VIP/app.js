@@ -1,5 +1,5 @@
 const CHAIN_ID = "0x89";
-const LINKSHORT = "CCS-RFIDC";
+const LINKSHORT = "CCS-VIP";
 
 // Ganti dengan alamat smart contract
 const contractAddress ="0x5DE022b2C331F96e28a1c420869b16B03A6a4A22";
