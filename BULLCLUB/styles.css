@@ -204,9 +204,9 @@ body {
   }
 
   .container {
-    padding: 20px; /* Padding lebih kecil untuk container */
+    padding: 25px; /* Padding lebih kecil untuk container */
     max-width: 100%; /* Lebar container mengikuti lebar layar */
-    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
+    border-radius: 30px; /* Hilangkan border-radius untuk tampilan full-width */
     box-shadow: 0px 0px 12px rgb(255 255 255 / 90%); /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
   }
 
