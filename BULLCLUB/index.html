@@ -13,7 +13,7 @@
     <button id="connectWalletBtn">Connect Wallet</button>
     <h3>BULLCLUB RACING CLUB PROGRAM (IDRT)</h3>
     <div style="display:flex; justify-content: center; margin-bottom: 10px;">
-      <img src="BRC.png" style="width: 20%;" />
+      <img src="BULLCLUB.png" style="width: 20%;" />
     </div>
     <span>Fairlaunch Contract: <div id="contractFairlaunch"></div></span>
     <div id="referralLinkContainer" style="display: none;">
@@ -27,7 +27,7 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="5000" max="1000000" onblur="validateAmount()" />
+      <input type="number" id="amount" placeholder="Enter amount" min="16000" max="8000000" onblur="validateAmount()" />
 
       <label for="token">Token:</label>
       <select id="token">
@@ -53,10 +53,10 @@
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 5000) {
-        amountInput.value = 5000;
-    } else if (value > 1000000) {
-        amountInput.value = 1000000;
+    if (value < 16000) {
+        amountInput.value = 16000;
+    } else if (value > 8000000) {
+        amountInput.value = 8000000;
     }
     }
     </script>

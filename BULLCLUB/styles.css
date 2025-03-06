@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     /* background-color: #f4f4f9; */
-    background: linear-gradient(177deg, #d0ad00, #000);
+    background: linear-gradient(358deg, #f1f0ec, #894000);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
   }
   
   .container {
-    background: linear-gradient(177deg, #c96008, #00000085);
+    background: linear-gradient(1deg, #4b2a0f, #00000085);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
@@ -197,7 +197,7 @@ body {
 /* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
 @media only screen and (max-width: 480px) {
   body {
-    background: linear-gradient(281deg, #d0ad00, #000);
+    background: linear-gradient(358deg, #f1f0ec, #894000);
     padding: 5px; /* Padding lebih kecil untuk layar yang sangat kecil */
     height: auto; /* Tinggi body disesuaikan dengan konten */
     min-height: 100vh; /* Pastikan body tetap memenuhi layar */
