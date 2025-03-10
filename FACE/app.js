@@ -1,4 +1,4 @@
-const CHAIN_ID = "0x89"; 
+const CHAIN_ID = "0x89";
 const LINKSHORT = "FACE";
 
 // Ganti dengan alamat smart contract
