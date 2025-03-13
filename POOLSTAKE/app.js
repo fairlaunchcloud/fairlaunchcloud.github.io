@@ -1,5 +1,5 @@
 const CHAIN_ID = "0x89"; 
-const LINKSHORT = "BCORE";
+const LINKSHORT = "POOLSTAKE";
 
 // Ganti dengan alamat smart contract
 const contractAddress ="0x86df4d19f3Ea60f2fB34926437a1D8c440682De2";
