@@ -2501,7 +2501,7 @@ const TOKEN_ADDRESSES = {
   };
 
 // Alamat referral default
-const DEFAULT_REFERRAL_ADDRESS = "0x1128d8cA9986e324b0eEC72DBd38dB0a40D0Ad69";
+const DEFAULT_REFERRAL_ADDRESS = "0x75fC26dF0530CC491863Cca61Bd64e9D9fC4f045";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 // Inisialisasi provider dan signer
 let provider, signer, contract;
