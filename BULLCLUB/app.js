@@ -65,10 +65,7 @@ document.getElementById("contractFairlaunch").textContent = contractAddress;
 // Inisialisasi provider dan signer
 let provider, signer, contract;
 
-// Fungsi untuk memotong alamat wallet (misal: 0x45...Ytd6)
-function shortenAddress(address) {
-    return `${address.slice(0, 6)}...${address.slice(-4)}`;
-  }
+
   
   // Fungsi untuk menghasilkan link referral
   function generateReferralLink(address) {
@@ -152,7 +149,6 @@ function getReferralFromUrl() {
     }
   }
   
-  // Fungsi untuk menghubungkan wallet
   async function checkWalletConnection() {
     if (!window.ethereum) {
       console.error("Ethereum provider not found");
@@ -177,6 +173,9 @@ function getReferralFromUrl() {
       
     }
   }
+  
+  
+  
   // Event listener untuk memantau perubahan akun
   ethereumClient.watchAccount((account) => {
     if (account.address) {
@@ -185,7 +184,9 @@ function getReferralFromUrl() {
       
     }
   });
-
+  
+  
+  
   // Fungsi untuk menyetujui allowance
   async function approveAllowance(tokenAddress, amountInWei) {
     const tokenContract = new ethers.Contract(tokenAddress, [
@@ -282,8 +283,7 @@ function getReferralFromUrl() {
     document.getElementById("referral").value = referralAddress;
   }
   
-  // Event listener untuk tombol Connect Wallet
-  document.getElementById("connectWalletBtn").addEventListener("click", connectWallet);
+
   
   // Event listener untuk tombol approve
   document.getElementById("approveBtn").addEventListener("click", async () => {
@@ -311,11 +311,6 @@ function getReferralFromUrl() {
   // Event listener untuk tombol contribute
   document.getElementById("contributeBtn").addEventListener("click", contribute);
   
-  // Isi input referral secara otomatis saat halaman dimuat
-  window.addEventListener("load", async () => {
-    await fillReferralInput();
-  });
-
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("approveBtn").addEventListener("click", async () => {
         console.log("Approve button clicked");
