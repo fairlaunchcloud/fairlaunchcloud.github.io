@@ -201,7 +201,8 @@ function getReferralFromUrl() {
       await tx.wait();
       console.log("Allowance approved");
   
-      
+      // Perbarui tampilan tombol
+      await initializeButtons();
   
       Swal.fire({
         title: "Success",
@@ -314,14 +315,8 @@ function getReferralFromUrl() {
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("approveBtn").addEventListener("click", async () => {
         console.log("Approve button clicked");
-        const amount = document.getElementById("amount").value;
-        const token = document.getElementById("token").value;
-
-        if (!amount || !token) {
-            console.error("Amount or token missing");
-            return;
-        }
-
+        
+        await initializeButtons();
         await checkWalletConnection();
         
     });
