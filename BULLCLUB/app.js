@@ -311,6 +311,10 @@ function getReferralFromUrl() {
   
   // Event listener untuk tombol contribute
   document.getElementById("contributeBtn").addEventListener("click", contribute);
+  window.addEventListener("load", async () => {
+    await fillReferralInput();
+    
+  });
   
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("approveBtn").addEventListener("click", async () => {
