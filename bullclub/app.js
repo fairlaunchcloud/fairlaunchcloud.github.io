@@ -42,7 +42,7 @@ import {
         '--w3m-color-fg-1': '#050501',
         '--w3m-color-fg-2': '#ff8c00',
         '--w3m-color-fg-3': '#ff8c00',
-        '--w3m-color-bg-1': '#eaeaea',
+        '--w3m-color-bg-1': '#fff',
         '--w3m-color-bg-2': '#f4f4f4',
         '--w3m-color-bg-3': '#ffffff',
         '--w3m-accent-color': '#ff8c00',
