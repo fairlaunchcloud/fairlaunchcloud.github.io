@@ -26,7 +26,7 @@ import {
       new WagmiCoreConnectors.CoinbaseWalletConnector({
         chains,
         options: {
-          appName: "html wagmi example",
+          appName: "fairlaunch",
         },
       }),
     ],
@@ -37,6 +37,12 @@ import {
   const ethereumClient = new EthereumClient(wagmiConfig, chains);
   export const web3Modal = new Web3Modal(
     {
+      themeVariables: {
+        '--w3m-font-family': 'Roboto, sans-serif',
+        '--w3m-accent-color': '#F5841F',
+        '--w3m-background-color': '#F5841F',
+        '--w3m-accent-fill-color': '#000'
+      },
       projectId,
       walletImages: {
         safe: "./bullclub.png",
