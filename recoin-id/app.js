@@ -43,7 +43,7 @@ import {
         '--w3m-color-fg-2': '#fdffbe',
         '--w3m-color-fg-3': '#ffd700',
         '--w3m-color-bg-1': 'darkred',
-        '--w3m-color-bg-2': '#f4f4f4',
+        '--w3m-color-bg-2': 'black',
         '--w3m-color-bg-3': '#ffffff',
         '--w3m-accent-color': '#fdffbe',
         '--w3m-background-color': 'floralwhite',
