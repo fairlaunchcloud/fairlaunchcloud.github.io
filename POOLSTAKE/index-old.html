@@ -4,18 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Fairlaunch For Our Community</title>
-  <link rel="icon" type="image/x-icon" href="./pps.png">
   <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <div class="container">
-    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
-    <w3m-core-button></w3m-core-button>
+    <button id="connectWalletBtn">Connect Wallet</button>
     <h3>PRIVATE POOL STAKE (PPS)</h3>
     <div style="display:flex; justify-content: center; margin-bottom: 10px;">
-      <img src="pps.png" style="width: 18%;" />
+      <img src="PPS.png" style="width: 18%;" />
     </div>
     <span>Fairlaunch Contract: <div id="contractFairlaunch"></div></span>
     <div id="referralLinkContainer" style="display: none;">
@@ -51,15 +49,7 @@
     </div>
   </div>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
- <script type="module" src="app.js"></script>
- <script>
-   // Polyfill process for browser
-   window.process = {
-     env: {
-       NODE_ENV: 'production' // or 'production' if you're in production
-     }
-   };
- </script>
+  <script src="app.js"></script>
   <script>
     function validateAmount() {
     let amountInput = document.getElementById("amount");

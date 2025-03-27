@@ -46,7 +46,7 @@ import {
         '--w3m-color-bg-2': '#f4f4f4',
         '--w3m-color-bg-3': '#ffffff',
         '--w3m-accent-color': '#ff8c00',
-        '--w3m-background-color': '#ffffff',
+        '--w3m-background-color': '#ff8c00',
         '--w3m-accent-fill-color': '#000'
       },
       projectId,
