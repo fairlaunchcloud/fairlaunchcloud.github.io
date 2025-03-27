@@ -39,14 +39,14 @@ import {
     {
       projectId,
       walletImages: {
-        safe: "./face.png",
+        safe: "./bullclub.png",
       },
     },
     ethereumClient
   );
 
 import { contractABI } from './abi.js';
-const LINKSHORT = "BULLCLUB";
+const LINKSHORT = "bullclub";
 
 // Ganti dengan alamat smart contract
 const contractAddress ="0x5BdCac26281fec02c9Eff6525849d7477F56F557";
