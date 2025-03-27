@@ -142,19 +142,18 @@ button:disabled {
 
 /* Tambahkan media query untuk layar dengan lebar maksimum 600px (ukuran mobile) */
 @media only screen and (max-width: 600px) {
-body {
-  padding: 10px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
-}
+  body {
+    padding: 10px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
+  }
 
-.container {
-  padding: 15px; /* Kurangi padding pada container */
-  max-width: 100%; /* Lebar container mengikuti lebar layar */
-  border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
-  box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
-}
-}
+  .container {
+    padding: 15px; /* Kurangi padding pada container */
+    max-width: 100%; /* Lebar container mengikuti lebar layar */
+    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
+    box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+  }
 
-h1 {
+  h1 {
   font-size: 24px; /* Perkecil ukuran font untuk judul */
   margin-bottom: 15px;
 }
