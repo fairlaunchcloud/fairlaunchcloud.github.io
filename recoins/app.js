@@ -23,7 +23,7 @@ const wagmiConfig = createConfig({
   autoConnect: true,
   connectors: [
     ...w3mConnectors({ chains, version: 2, projectId }),
-    new WagmiCoreConnectors.InjectedConnector({
+    new WagmiCoreConnectors.WalletConnectConnector({
       chains,
       options: {
         appName: "fairlaunch",
