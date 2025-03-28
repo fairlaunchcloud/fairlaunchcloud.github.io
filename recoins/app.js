@@ -10,11 +10,11 @@ import {
 import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.7.1";
 
 // 0. Import wagmi dependencies
-const { mainnet, polygon } = WagmiCoreChains;
+const { polygon } = WagmiCoreChains;
 const { configureChains, createConfig } = WagmiCore;
 
 // 1. Define chains
-const chains = [mainnet, polygon];
+const chains = [polygon];
 const projectId = "9ba1c138ff7ad815f7026b920b652f0b";
 
 // 2. Configure wagmi client
@@ -23,7 +23,7 @@ const wagmiConfig = createConfig({
   autoConnect: true,
   connectors: [
     ...w3mConnectors({ chains, version: 2, projectId }),
-    new WagmiCoreConnectors.WalletConnectConnector({
+    new WagmiCoreConnectors.InjectedConnector({
       chains,
       options: {
         appName: "fairlaunch",
