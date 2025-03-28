@@ -10,11 +10,11 @@ import {
 import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.7.1";
 
 // 0. Import wagmi dependencies
-const { polygon } = WagmiCoreChains;
+const { mainnet, polygon } = WagmiCoreChains;
 const { configureChains, createConfig } = WagmiCore;
 
 // 1. Define chains
-const chains = [polygon];
+const chains = [mainnet, polygon];
 const projectId = "9ba1c138ff7ad815f7026b920b652f0b";
 
 // 2. Configure wagmi client
