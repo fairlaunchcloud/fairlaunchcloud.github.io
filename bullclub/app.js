@@ -21,7 +21,7 @@ const modal = createAppKit({
     adapters: [wagmiAdapter],
     networks: appKitNetworks,
     enableWalletGuide: false,
-    enableWalletConnect: false,
+    enableWalletConnect: true,
     projectId,
     themeMode: 'dark',
     features: {
