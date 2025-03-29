@@ -1,67 +1,79 @@
+import { contractABI } from './abi.js'; 
 import {
-    EthereumClient,
-    w3mConnectors,
-    w3mProvider,
-    WagmiCore,
-    WagmiCoreChains,
-    WagmiCoreConnectors,
-  } from "https://unpkg.com/@web3modal/ethereum@2.7.1";
-  
-  import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.7.1";
-  
-  // 0. Import wagmi dependencies
-  const { polygon } = WagmiCoreChains;
-  const { configureChains, createConfig } = WagmiCore;
-  
-  // 1. Define chains
-  const chains = [polygon];
-  const projectId = "9ba1c138ff7ad815f7026b920b652f0b";
-  
-  // 2. Configure wagmi client
-  const { publicClient } = configureChains(chains, [w3mProvider({ projectId })]);
-  const wagmiConfig = createConfig({
-    autoConnect: true,
-    connectors: [
-      ...w3mConnectors({ chains, version: 2, projectId }),
-      new WagmiCoreConnectors.CoinbaseWalletConnector({
-        chains,
-        options: {
-          appName: "fairlaunch",
-        },
-      }),
-    ],
-    publicClient,
-  });
-  
-  // 3. Create ethereum and modal clients
-  const ethereumClient = new EthereumClient(wagmiConfig, chains);
-  export const web3Modal = new Web3Modal(
-    {
-      themeVariables: {
-        '--w3m-font-family': 'Roboto, sans-serif',
-        '--w3m-color-fg-1': '#050501',
-        '--w3m-color-fg-2': '#ff8c00',
-        '--w3m-color-fg-3': '#ff8c00',
-        '--w3m-color-bg-1': '#fff',
-        '--w3m-color-bg-2': '#f4f4f4',
-        '--w3m-color-bg-3': '#ffffff',
-        '--w3m-accent-color': '#ff8c00',
-        '--w3m-background-color': '#ff8c00',
-        '--w3m-accent-fill-color': '#000'
-      },
-      projectId,
-      walletImages: {
-        safe: "./bullclub.png",
-      },
+    WagmiAdapter,
+    createAppKit,
+    networks
+} from 'https://cdn.jsdelivr.net/npm/@reown/appkit-cdn@1.7.0/dist/appkit.js';
+import { reconnect } from 'https://esm.sh/@wagmi/core@2.x';
+
+export const projectId = '9ba1c138ff7ad815f7026b920b652f0b'; 
+
+const appKitNetworks = [networks.polygon];
+
+
+const wagmiAdapter = new WagmiAdapter({
+    networks: appKitNetworks,
+    projectId
+});
+
+
+const modal = createAppKit({
+    adapters: [wagmiAdapter],
+    networks: appKitNetworks,
+    enableWalletGuide: false,
+    enableWalletConnect: false,
+    projectId,
+    themeMode: 'dark',
+    features: {
+        analytics: true,
+        email: false,
+        socials: false,
+        onramp: false,
+        swaps: false,
     },
-    ethereumClient
-  );
+    metadata: {
+        name: 'Fairlaunch',
+        description: 'Fairlaunch Community',
+        url: window.location.href,
+        icons: ['https://avatars.githubusercontent.com/u/179229932?s=200&v=4']
+    }
+});
 
-import { contractABI } from './abi.js';
+reconnect(wagmiAdapter.wagmiConfig);
+
+
+let accountState = {};
+let eip155Provider = null;
+let provider, signer, contract;
+
+
+modal.subscribeAccount(state => {
+    accountState = state;
+    console.log("Account state updated:", state);
+    if (state.address && eip155Provider) {
+        initializeProvider();
+        updateUI();
+    } else {
+      updateUI();
+    }
+});
+
+modal.subscribeProviders(state => {
+    eip155Provider = state['eip155'];
+    if (eip155Provider && accountState.address) {
+        initializeProvider();
+        updateUI();
+    } else {
+      updateUI();
+    }
+});
+
+document.getElementById('open-modal')?.addEventListener('click', () => {
+    modal.open()
+});
+
 const LINKSHORT = "bullclub";
-
-// Ganti dengan alamat smart contract
-const contractAddress ="0x5BdCac26281fec02c9Eff6525849d7477F56F557";
+const contractAddress = "0x5BdCac26281fec02c9Eff6525849d7477F56F557";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0x554cd6bdD03214b10AafA3e0D4D42De0C5D2937b", // Contract ID token Payment (USDT)
@@ -69,271 +81,253 @@ const TOKEN_ADDRESSES = {
     PAYTOKENC: "0x...", // Alamat Token C
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
-  };
+};
 
-// Alamat referral default
 const DEFAULT_REFERRAL_ADDRESS = "0x5BdCac26281fec02c9Eff6525849d7477F56F557";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
-// Inisialisasi provider dan signer
-let provider, signer, contract;
 
+function initializeProvider() {
+    if (eip155Provider && accountState.address) {
+        provider = new ethers.providers.Web3Provider(eip155Provider);
+        signer = provider.getSigner();
+        contract = new ethers.Contract(contractAddress, contractABI, signer);
+    }
+}
 
+function shortenAddress(address) {
+  return `${address.slice(0, 6)}...${address.slice(-4)}`;
+}
+function updateUI() {
+  const connectButton = document.getElementById("open-modal");
+  const referralContainer = document.getElementById("referralLinkContainer");
   
-  // Fungsi untuk menghasilkan link referral
-  function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`; // Gunakan contractAddress
+  if (accountState.isConnected) {
+
+    const shortenedAddress = shortenAddress(accountState.address);
+    
+    connectButton.innerHTML = `
+      <span class="wallet-connected">
+        <img src="bullclub.png" class="wallet-favicon" alt="Wallet Icon">
+        ${shortenedAddress}
+      </span>
+    `;
+    connectButton.classList.add('connected');
+    connectButton.classList.remove('disconnected');
+
+    const referralLink = generateReferralLink(accountState.address);
+    referralContainer.style.display = "block";
+    document.getElementById("referralLink").textContent = referralLink;
+    document.getElementById("referralLink").href = referralLink;
+
+    initializeButtons();
+  } else {
+
+    connectButton.innerHTML = `
+      <span class="wallet-disconnected">
+        Connect Wallet
+      </span>
+    `;
+    connectButton.classList.add('disconnected');
+    connectButton.classList.remove('connected');
+
+    referralContainer.style.display = "none";
+
+    document.getElementById("approveBtn").style.display = "block";
+    document.getElementById("contributeBtn").style.display = "none";
+  }
+}
+
+function generateReferralLink(address) {
+    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
-  }
-  
-  // Fungsi untuk menyalin link referral ke clipboard
+}
+
 function copyReferralLink() {
-    const referralLink = document.getElementById("referralLink").href;
-  
+    const referralLink = document.getElementById("referralLink").textContent;
     navigator.clipboard.writeText(referralLink)
-      .then(() => {
-        Swal.fire({
-            title: "Success",
-            text: "Referral link copied to clipboard!",
-            icon: "success",
-            confirmButtonText: "OK",
-          });
-      })
-      .catch((error) => {
-        console.error("Failed to copy referral link:", error);
-        Swal.fire({
-            title: "Error",
-            text: "Failed to copy referral link. Please try again.",
-            icon: "error",
-            confirmButtonText: "OK",
-          });
-      });
-  }
-  
-  // Event listener untuk tombol copy
-  document.getElementById("copyReferralLinkBtn").addEventListener("click", copyReferralLink);
-  
-  /// Fungsi untuk membaca parameter `refId` dari URL
+        .then(() => {
+            Swal.fire({
+                title: "Success",
+                text: "Referral link copied to clipboard!",
+                icon: "success",
+                confirmButtonText: "OK",
+            });
+        })
+        .catch((error) => {
+            console.error("Failed to copy referral link:", error);
+            Swal.fire({
+                title: "Error",
+                text: "Failed to copy referral link. Please try again.",
+                icon: "error",
+                confirmButtonText: "OK",
+            });
+        });
+}
+
 function getReferralFromUrl() {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get("refId"); // Ambil nilai `refId` dari URL
-  }
-  
-  
-  // Fungsi untuk memeriksa allowance
-  async function checkAllowance(tokenAddress, ownerAddress, spenderAddress) {
-    const tokenContract = new ethers.Contract(tokenAddress, [
-      "function allowance(address owner, address spender) external view returns (uint256)",
-    ], provider);
-  
-    const allowance = await tokenContract.allowance(ownerAddress, spenderAddress);
-    return allowance;
-  }
-  async function getTokenDecimals(tokenAddress, provider) {
+    return urlParams.get("refId");
+}
+
+async function getTokenDecimals(tokenAddress) {
     const erc20Abi = ["function decimals() view returns (uint8)"];
     const tokenContract = new ethers.Contract(tokenAddress, erc20Abi, provider);
     return await tokenContract.decimals();
 }
 
-  // Fungsi untuk menginisialisasi tombol berdasarkan status allowance
-  async function initializeButtons() {
+async function checkAllowance(tokenAddress, ownerAddress, spenderAddress) {
+    const tokenContract = new ethers.Contract(tokenAddress, [
+        "function allowance(address owner, address spender) external view returns (uint256)",
+    ], provider);
+
+    const allowance = await tokenContract.allowance(ownerAddress, spenderAddress);
+    return allowance;
+}
+
+async function initializeButtons() {
+    if (!accountState.address || !provider) return;
+    
     const amount = document.getElementById("amount").value;
     const token = document.getElementById("token").value;
-	
-  
+
     if (!amount || !token) return;
-	const tokenAddress = TOKEN_ADDRESSES[token];
-	const decimals = await getTokenDecimals(tokenAddress, provider);
-    const amountInWei = ethers.utils.parseUnits(amount, decimals);
     
-    const ownerAddress = await signer.getAddress();
-  
-    // Periksa allowance
+    const tokenAddress = TOKEN_ADDRESSES[token];
+    const decimals = await getTokenDecimals(tokenAddress);
+    const amountInWei = ethers.utils.parseUnits(amount, decimals);
+    const ownerAddress = accountState.address;
+
     const allowance = await checkAllowance(tokenAddress, ownerAddress, contractAddress);
-  
+
     if (allowance.gte(amountInWei)) {
-      // Jika allowance cukup, tampilkan tombol Contribute
-      document.getElementById("approveBtn").style.display = "none";
-      document.getElementById("contributeBtn").style.display = "block";
+        document.getElementById("approveBtn").style.display = "none";
+        document.getElementById("contributeBtn").style.display = "block";
     } else {
-      // Jika allowance tidak cukup, tampilkan tombol Approve Allowance
-      document.getElementById("approveBtn").style.display = "block";
-      document.getElementById("contributeBtn").style.display = "none";
+        document.getElementById("approveBtn").style.display = "block";
+        document.getElementById("contributeBtn").style.display = "none";
     }
-  }
-  
-  async function checkWalletConnection() {
-    if (!window.ethereum) {
-      console.error("Ethereum provider not found");
-      return;
-    }
-  
-    provider = new ethers.providers.Web3Provider(window.ethereum);
-    signer = provider.getSigner();
-    contract = new ethers.Contract(contractAddress, contractABI, signer);
-  
-    const accounts = await provider.listAccounts(); // Periksa akun yang sudah terhubung
-  
-    if (accounts.length > 0) {
-      const referralAddress = accounts[0];
-      const referralLink = generateReferralLink(referralAddress);
-  
-      // Tampilkan dan perbarui elemen referral link
-      document.getElementById("referralLinkContainer").style.display = "block";
-      document.getElementById("referralLink").textContent = referralLink;
-      document.getElementById("referralLink").href = referralLink;
-      
-      
-    }
-  }
-  
-  
-  
-  // Event listener untuk memantau perubahan akun
-  ethereumClient.watchAccount((account) => {
-    if (account.address) {
-      checkWalletConnection();
-    } else {
-      
-    }
-  });
-  
-  
-  
-  // Fungsi untuk menyetujui allowance
-  async function approveAllowance(tokenAddress, amountInWei) {
+}
+
+async function approveAllowance(tokenAddress, amountInWei) {
     const tokenContract = new ethers.Contract(tokenAddress, [
-      "function approve(address spender, uint256 amount) external returns (bool)",
+        "function approve(address spender, uint256 amount) external returns (bool)",
     ], signer);
 
-	const approveBtn = document.getElementById("approveBtn");
+    const approveBtn = document.getElementById("approveBtn");
     approveBtn.disabled = true;
-  
+
     try {
-      const tx = await tokenContract.approve(contractAddress, amountInWei);
-      await tx.wait();
-      console.log("Allowance approved");
-  
-      // Perbarui tampilan tombol
-      await initializeButtons();
-  
-      Swal.fire({
-        title: "Success",
-        text: "Allowance approved successfully!",
-        icon: "success",
-        confirmButtonText: "OK",
-      });
+        const tx = await tokenContract.approve(contractAddress, amountInWei);
+        await tx.wait();
+        await initializeButtons();
+        Swal.fire({
+            title: "Success",
+            text: "Allowance approved successfully!",
+            icon: "success",
+            confirmButtonText: "OK",
+        });
     } catch (error) {
-      console.error("Error approving allowance:", error);
-	  approveBtn.disabled = false;
-      Swal.fire({
-        title: "Error",
-        text: "Failed to approve allowance.",
-        icon: "error",
-        confirmButtonText: "OK",
-      });
+        console.error("Error approving allowance:", error);
+        approveBtn.disabled = false;
+        Swal.fire({
+            title: "Error",
+            text: "Failed to approve allowance.",
+            icon: "error",
+            confirmButtonText: "OK",
+        });
     }
-  }
-  
-  // Fungsi untuk menghandle kontribusi
-  async function contribute() {
+}
+
+async function contribute() {
+    if (!accountState.address) {
+        Swal.fire({
+            title: "Error",
+            text: "Please connect your wallet first",
+            icon: "error",
+            confirmButtonText: "OK",
+        });
+        return;
+    }
+
     const amount = document.getElementById("amount").value;
     const token = document.getElementById("token").value;
     const referral = document.getElementById("referral").value;
-  
+
     if (!amount || !token) {
-      Swal.fire({
-        title: "Error",
-        text: "Please enter amount and select token",
-        icon: "error",
-        confirmButtonText: "OK",
-      });
-      return;
+        Swal.fire({
+            title: "Error",
+            text: "Please enter amount and select token",
+            icon: "error",
+            confirmButtonText: "OK",
+        });
+        return;
     }
-  
+
     document.getElementById("status").textContent = "Processing...";
     document.getElementById("contributeBtn").disabled = true;
-	
 
     try {
-		const tokenAddress = TOKEN_ADDRESSES[token];
-		const decimals = await getTokenDecimals(tokenAddress, provider);
-      const amountInWei = ethers.utils.parseUnits(amount, decimals); // Konversi ke wei
-      
-      const referralAddress = referral || ethers.constants.AddressZero; // Jika tidak ada referral, gunakan address zero
-  
-      // Lakukan kontribusi
-      const tx = await contract.contribute(amountInWei, tokenAddress, referralAddress);
-      await tx.wait();
-  
-      Swal.fire({
-        title: "Success",
-        text: "Contribution successful! Rewards distributed.",
-        icon: "success",
-        confirmButtonText: "OK",
-      });
-  
-      // Sembunyikan tombol Contribute setelah kontribusi berhasil
-      document.getElementById("contributeBtn").style.display = "none";
-  
-      // Tampilkan kembali tombol Approve Allowance (opsional)
-      document.getElementById("approveBtn").style.display = "block";
-    } catch (error) {
-      console.error("Error contributing:", error);
-      Swal.fire({
-        title: "Error",
-        text: "Contribution failed.",
-        icon: "error",
-        confirmButtonText: "OK",
-      });
-    } finally {
-      document.getElementById("contributeBtn").disabled = false;
-    }
-  }
-  
-  // Fungsi untuk mengisi input referral secara otomatis
-  function fillReferralInput() {
-    const referralAddress = getReferralFromUrl() || DEFAULT_REFERRAL_ADDRESS; // Gunakan refId dari URL atau alamat default
-    document.getElementById("referral").value = referralAddress;
-  }
-  
+        const tokenAddress = TOKEN_ADDRESSES[token];
+        const decimals = await getTokenDecimals(tokenAddress);
+        const amountInWei = ethers.utils.parseUnits(amount, decimals);
+        const referralAddress = referral || ethers.constants.AddressZero;
 
-  
-  // Event listener untuk tombol approve
-  document.getElementById("approveBtn").addEventListener("click", async () => {
+        const tx = await contract.contribute(amountInWei, tokenAddress, referralAddress);
+        await tx.wait();
+
+        Swal.fire({
+            title: "Success",
+            text: "Contribution successful! Rewards distributed.",
+            icon: "success",
+            confirmButtonText: "OK",
+        });
+
+        document.getElementById("contributeBtn").style.display = "none";
+        document.getElementById("approveBtn").style.display = "block";
+    } catch (error) {
+        console.error("Error contributing:", error);
+        Swal.fire({
+            title: "Error",
+            text: "Contribution failed.",
+            icon: "error",
+            confirmButtonText: "OK",
+        });
+    } finally {
+        document.getElementById("contributeBtn").disabled = false;
+    }
+}
+
+function fillReferralInput() {
+    const referralAddress = getReferralFromUrl() || DEFAULT_REFERRAL_ADDRESS;
+    document.getElementById("referral").value = referralAddress;
+}
+
+document.getElementById("approveBtn").addEventListener("click", async () => {
     const amount = document.getElementById("amount").value;
     const token = document.getElementById("token").value;
-  
+
     if (!amount || !token) {
-      Swal.fire({
-        title: "Error",
-        text: "Please enter amount and select token",
-        icon: "error",
-        confirmButtonText: "OK",
-      });
-      return;
+        Swal.fire({
+            title: "Error",
+            text: "Please enter amount and select token",
+            icon: "error",
+            confirmButtonText: "OK",
+        });
+        return;
     }
 
-	const tokenAddress = TOKEN_ADDRESSES[token];
-	const decimals = await getTokenDecimals(tokenAddress, provider);
+    const tokenAddress = TOKEN_ADDRESSES[token];
+    const decimals = await getTokenDecimals(tokenAddress);
     const amountInWei = ethers.utils.parseUnits(amount, decimals);
     
-  
     await approveAllowance(tokenAddress, amountInWei);
-  });
-  
-  // Event listener untuk tombol contribute
-  document.getElementById("contributeBtn").addEventListener("click", contribute);
-  window.addEventListener("load", async () => {
-    await fillReferralInput();
-    
-  });
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("approveBtn").addEventListener("click", async () => {
-        console.log("Approve button clicked");
-        
-        await initializeButtons();
-        await checkWalletConnection();
-        
-    });
+});
+
+document.getElementById("contributeBtn").addEventListener("click", contribute);
+document.getElementById("copyReferralLinkBtn").addEventListener("click", copyReferralLink);
+
+window.addEventListener("load", fillReferralInput);
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("amount").addEventListener("change", initializeButtons);
+    document.getElementById("token").addEventListener("change", initializeButtons);
 });
