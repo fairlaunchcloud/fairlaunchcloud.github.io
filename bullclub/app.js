@@ -39,10 +39,10 @@ const modal = createAppKit({
         '20459438007b75f4f4acb98bf29aa3b800550309646d375da5fd4aac6c2a2c66'
       ],
     metadata: {
-        name: 'Fairlaunch',
-        description: 'Fairlaunch Community',
+        name: 'Fairlaunch Bullclub',
+        description: 'Fairlaunch Bullclub Community',
         url: window.location.href,
-        icons: ['https://avatars.githubusercontent.com/u/179229932?s=200&v=4']
+        icons: ['https://fairlaunch.cloud/bullclub/bullclub.png']
     }
 });
 
