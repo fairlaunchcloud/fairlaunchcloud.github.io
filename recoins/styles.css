@@ -51,7 +51,7 @@ input, select {
 
 button {
   padding: 10px;
-  background-color: #fdffbe;
+  background-color: white;
   color: #a50721;
   border: none;
   border-radius: 4px;
@@ -229,12 +229,12 @@ h3 {
 }
 
 input, select {
-  font-size: 20px; /* Ukuran font lebih kecil untuk input dan select */
+  font-size: 12px; /* Ukuran font lebih kecil untuk input dan select */
   padding: 6px; /* Padding lebih kecil untuk input dan select */
 }
 
 button {
-  font-size: 20px; /* Ukuran font lebih kecil untuk tombol */
+  font-size: 12px; /* Ukuran font lebih kecil untuk tombol */
   padding: 6px; /* Padding lebih kecil untuk tombol */
 }
 
@@ -256,4 +256,9 @@ button {
 #contractFairlaunch {
   font-size: 12px; /* Ukuran font lebih kecil untuk teks kontrak fairlaunch */
 }
+}
+.wallet-favicon {
+width: 20px;
+height: 20px;
+object-fit: contain;
 }
