@@ -45,7 +45,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'Fairlaunch For Paymatic Community Support',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/bullclub/bullclub.png']
+        icons: ['https://fairlaunch.cloud/paymatic/paymatic.png']
     }
 });
 
@@ -82,8 +82,8 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "bullclub";
-const contractAddress = "0x5BdCac26281fec02c9Eff6525849d7477F56F557";
+const LINKSHORT = "paymatic";
+const contractAddress = "0xE4A42265dDBB1Cac6FB8863AC1540ECd0c9aAcDb";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0x554cd6bdD03214b10AafA3e0D4D42De0C5D2937b", // Contract ID token Payment (USDT)
@@ -93,7 +93,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
 };
 
-const DEFAULT_REFERRAL_ADDRESS = "0x5BdCac26281fec02c9Eff6525849d7477F56F557";
+const DEFAULT_REFERRAL_ADDRESS = "0xE4A42265dDBB1Cac6FB8863AC1540ECd0c9aAcDb";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
@@ -117,7 +117,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="bullclub.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="paymatic.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
