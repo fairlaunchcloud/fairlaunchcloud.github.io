@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Fairlaunch For Our Community</title>
+  <link rel="icon" type="image/x-icon" href="./tba.png">
   <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <div class="container">
-    <button id="connectWalletBtn">Connect Wallet</button>
+    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
+    <!-- <w3m-core-button></w3m-core-button> -->
+    <button id="open-modal">Connect Wallet</button>
     <h3>TBA BLOCKCHAIN POOL STAKING</h3>
     <div style="display:flex; justify-content: center; margin-bottom: 10px;">
-      <img src="THUBA (TBA).png" style="width: 20%;" />
+      <img src="tba.png" style="width: 18%;" />
     </div>
     <span>Fairlaunch Contract: <div id="contractFairlaunch"></div></span>
     <div id="referralLinkContainer" style="display: none;">
@@ -27,7 +30,7 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="1" max="10000" onblur="validateAmount()" />
+      <input type="number" id="amount" placeholder="Enter amount" min="1" max="10000" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
@@ -47,7 +50,15 @@
     </div>
   </div>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
-  <script src="app.js"></script>
+ <script type="module" src="app.js"></script>
+ <script>
+   // Polyfill process for browser
+   window.process = {
+     env: {
+       NODE_ENV: 'production' // or 'production' if you're in production
+     }
+   };
+ </script>
   <script>
     function validateAmount() {
     let amountInput = document.getElementById("amount");
