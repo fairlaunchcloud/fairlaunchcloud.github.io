@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#07a3a5',
+        '--w3m-accent': '#01c7df',
     },
     features: {
         analytics: true,
