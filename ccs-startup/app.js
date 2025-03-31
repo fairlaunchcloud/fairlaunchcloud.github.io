@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'Clabs Loyality Program For Our Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/ccs-startup/ccs-rfidr.png']
+        icons: ['https://fairlaunch.cloud/ccs-startup/rfidr.png']
     }
 });
 
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="ccs-rfidr.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="rfidr.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
