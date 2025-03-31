@@ -24,6 +24,9 @@ const modal = createAppKit({
     enableWalletConnect: true,
     projectId,
     themeMode: 'dark',
+    themeVariables: {
+        '--w3m-accent': '#3fc3eeed',
+    },
     features: {
         analytics: true,
         email: false,
