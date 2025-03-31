@@ -1,7 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f9; */
-  background: linear-gradient(1deg, #4e087f, #19191a);
+  /* background: linear-gradient(1deg, #4e087f, #19191a); */
+  background: linear-gradient(1deg, #07a3a5, #0e0104);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,8 @@ body {
 }
 
 .container {
-  background: linear-gradient(3deg, #5a0969, #000000);
+  /* background: linear-gradient(3deg, #5a0969, #000000); */
+  background: linear-gradient(166deg, #07a3a5, #00000085);
   padding: 20px;
   border-radius: 8px;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -52,8 +54,8 @@ input, select {
 
 button {
   padding: 10px;
-  background-color: #e5f3ed;
-  color: #120116;
+  background-color: #fdffb0;
+  color: #020f41e3;
   border: none;
   border-radius: 4px;
   font-size: 16px;
