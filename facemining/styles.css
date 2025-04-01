@@ -140,20 +140,16 @@ button:disabled {
 
 /* Tambahkan media query untuk layar dengan lebar maksimum 600px (ukuran mobile) */
 @media only screen and (max-width: 600px) {
-body {
-  padding: 10px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
-}
+  body {
+    padding: 10px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
+  }
 
-.container {
-  background: linear-gradient(61deg, #0a4a5e, #00000085);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
+  .container {
+    padding: 15px; /* Kurangi padding pada container */
+    max-width: 100%; /* Lebar container mengikuti lebar layar */
+    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
+    box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+  }
 
 h1 {
   font-size: 24px; /* Perkecil ukuran font untuk judul */
