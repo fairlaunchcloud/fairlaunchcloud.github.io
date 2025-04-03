@@ -257,9 +257,14 @@ body {
     font-size: 12px; /* Ukuran ikon lebih kecil */
     padding: 6px; /* Padding lebih kecil untuk ikon copy */
   }
-
+  
   #contractFairlaunch {
     font-size: 12px; /* Ukuran font lebih kecil untuk teks kontrak fairlaunch */
   }
+  }
+  .wallet-favicon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
   
