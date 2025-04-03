@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#e4745d',
+        '--w3m-accent': '#3fc3ee',
     },
     features: {
         analytics: true,
@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'Fairlaunch For RCA Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/0x16AB421834B9Dd9eFba68BA64ab812B03cab65A7/rca.png']
+        icons: ['https://fairlaunch.cloud/ENDY/rca.png']
     }
 });
 
@@ -85,8 +85,8 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "0x16AB421834B9Dd9eFba68BA64ab812B03cab65A7";
-const contractAddress = "0x16AB421834B9Dd9eFba68BA64ab812B03cab65A7";
+const LINKSHORT = "ENDY";
+const contractAddress = "0x96715BE1Cd356f3fB1522712F35Cf0b3174088Fe";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0x554cd6bdD03214b10AafA3e0D4D42De0C5D2937b", // Contract ID token Payment (USDT)
@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
 };
 
-const DEFAULT_REFERRAL_ADDRESS = "0x16AB421834B9Dd9eFba68BA64ab812B03cab65A7";
+const DEFAULT_REFERRAL_ADDRESS = "0x96715BE1Cd356f3fB1522712F35Cf0b3174088Fe";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
