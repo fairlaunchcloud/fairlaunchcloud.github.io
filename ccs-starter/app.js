@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'Clabs Loyality Program For Our Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/ccs-startup/rfidr.png']
+        icons: ['https://fairlaunch.cloud/ccs-starter/rfidr.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "ccs-startup";
+const LINKSHORT = "ccs-starter";
 const contractAddress = "0x2eAA31D1f5D2B05dD9dCb64B06BED2274821fAf9";
 
 const TOKEN_ADDRESSES = {
