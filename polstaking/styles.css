@@ -62,13 +62,13 @@ body {
   }
   
   button:hover {
-    background-color: #e7f8ff;
-    color: #8a9163;
+    background-color: #f4d6e0;
+    color: #a50721;
   }
   
   button:disabled {
-    background-color: whitesmoke;
-    color: #999360;
+    background-color: #f4d6e0;
+    color: #a50721;
     cursor: not-allowed;
   }
   
@@ -99,7 +99,7 @@ body {
     /* word-break: break-all; */
     overflow: hidden;
     font-weight: 600;
-    color: #154579;
+    color: #a50721;
   }
   
   /* #referralLink:hover {
@@ -120,14 +120,15 @@ body {
   
   .copy-icon {
     font-size: 16px;
-    background: #1e4179;
+    background: #d75672;
+    color: whitesmoke;
     border-radius: 10px;
     padding: 10px;
   }
   
   .copy-icon:hover {
-    color: #67686b;
-    background: #ffea44;
+    color: #a50721;
+    background: #f4d6e0;
   }
 
   #contributeBtn {
