@@ -5,8 +5,6 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     top: 1% !important;
-    
-  
     background-image: url('https://media.giphy.com/media/doXBzUFJRxpaUbuaqz/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
     background-size: cover;
     background-position: center;
@@ -222,18 +220,19 @@ body {
 /* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
 @media only screen and (max-width: 480px) {
   body {
-    background: content-box;
+    background: linear-gradient(5deg, #3fc3ee, #001434);
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     top: 1% !important;
     background:transparent;
   
-    background-image: url('https://media.giphy.com/media/fyad3Zy4KPso5IzcL9/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-image: url('https://media.giphy.com/media/doXBzUFJRxpaUbuaqz/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     animation: animateBackground 60s linear infinite;
-    display: flow-root;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -245,11 +244,12 @@ body {
     /* max-width: 100%; Lebar container mengikuti lebar layar */
     /* border-radius: 30px; Hilangkan border-radius untuk tampilan full-width */
     /* box-shadow: 0px 0px 12px rgb(255 255 255 / 90%); Hilangkan box-shadow untuk tampilan yang lebih sederhana */
-    background: content-box;
+    background: linear-gradient(5deg, #3fc3ee, #001434);
+    background:transparent;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     top: 1% !important;
-    background:transparent;
+    
   
     background-image: url('https://media.giphy.com/media/fyad3Zy4KPso5IzcL9/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
     background-size: cover;
