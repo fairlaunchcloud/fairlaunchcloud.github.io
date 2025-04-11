@@ -76,7 +76,7 @@ body {
     color: #552007;
     border: none;
     border-radius: 7px;
-    font-size: 18px;
+    font-size: 22px;
     cursor: pointer;
     margin: 5px 0;
     font-weight: 700;
@@ -290,7 +290,7 @@ body {
   }
 
   button {
-    font-size: 12px; /* Ukuran font lebih kecil untuk tombol */
+    font-size: 18px; /* Ukuran font lebih kecil untuk tombol */
     padding: 10px; /* Padding lebih kecil untuk tombol */
   }
 
