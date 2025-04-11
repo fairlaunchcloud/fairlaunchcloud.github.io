@@ -253,7 +253,7 @@ body {
     
   
     background-image: url('https://media.giphy.com/media/iCdfmNj6pdmGgr5uoI/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -264,7 +264,7 @@ body {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
-    max-width: 320px;
+    max-width: 350px;
     width: 100%;
     text-align: center;
     color: gold;
