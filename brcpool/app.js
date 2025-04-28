@@ -86,7 +86,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
 });
 
 const LINKSHORT = "brcpool";
-const contractAddress = "0x33a5cf9A5f0251faaAA403ccC2ad21Eb9D0276d1";
+const contractAddress = "0xC40b04E80E481df67Cf5D92EBdb9ba9e5BA7c65D";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0x33a5cf9A5f0251faaAA403ccC2ad21Eb9D0276d1";
+const DEFAULT_REFERRAL_ADDRESS = "0xC40b04E80E481df67Cf5D92EBdb9ba9e5BA7c65D";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
