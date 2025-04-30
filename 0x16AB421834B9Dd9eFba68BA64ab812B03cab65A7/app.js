@@ -31,7 +31,7 @@ const modal = createAppKit({
         analytics: true,
         email: false,
         socials: false,
-        onramp: false,
+        onramp: true,
         swaps: false,
     },
     featuredWalletIds: [
