@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch For Community Suppoert',
         description: 'Community Support For Gold RWA Burning',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/burn2gidr/fairlaunchcloud.png']
+        icons: ['https://fairlaunch.cloud/burn2fgold/fgold.png']
     }
 });
 
@@ -85,12 +85,12 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "burn2gidr";
+const LINKSHORT = "burn2fgold";
 const contractAddress = "0x68B356c5C165484Fb1EA2ca7418E00acc19E8B79";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x38A33Cf60164EaC333400aB0ee7DeeBe92f968dB", // Contract ID token Payment (FGOLD)
-    PAYTOKENB: "0x6b7682a9fdA1d482A3779C9489DC62437BB58945", // Contract ID token Payment (USDC)
+    PAYTOKENA: "0x6b7682a9fdA1d482A3779C9489DC62437BB58945", // Contract ID token Payment (FGOLD)
+    PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
     PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="fairlaunchcloud.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="fgold.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;

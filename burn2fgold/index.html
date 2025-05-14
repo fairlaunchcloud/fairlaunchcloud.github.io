@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>RWA Burn For GIDR</title>
-  <link rel="icon" type="image/x-icon" href="./fairlaunchcloud.png">
+  <title>RWA Burn For FGOLD</title>
+  <link rel="icon" type="image/x-icon" href="./fgold.png">
   <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -16,10 +16,10 @@
     <button id="open-modal">Connect Wallet</button>
     <h3>GOLD REAL WORLD ASSET (RWA)</h3>
     <div style="display:flex; justify-content: center; margin-bottom: 18px;">
-      <img src="fgold.png" style="width: 18%;" />
       <img src="zap.png" style="width: 18%;" />
+      <img src="fgold.png" style="width: 18%;" />
     </div>
-    <span>RWA Burn For GIDR:<br>( Fee Burn:10% ) <div id="contractFairlaunch"></div></span>
+    <span>RWA Burn For FGOLD:<br>( Fee Burn:10% ) <div id="contractFairlaunch"></div></span>
     <div id="referralLinkContainer" style="display: none;">
         <p>Your Referral Link:</p>
         <div class="referral-link-box">
@@ -31,13 +31,14 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="0.5" max="5" onblur="validateAmount()"/>
+      <input type="number" id="amount" placeholder="Enter amount" min="0.5" max="1" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
+        <option value="PAYTOKENA">ZAP</option>
+        <!-- <option value="PAYTOKENB">DAI</option>
         <option value="PAYTOKENA">FGOLD</option>
         <option value="PAYTOKENB">ZAP</option>
-        <!-- <option value="PAYTOKENB">DAI</option>
         <option value="PAYTOKENC">FDUSD</option>
         <option value="PAYTOKEND">BUSD</option>
         <option value="PAYTOKENE">USDC</option> -->
@@ -68,8 +69,8 @@
 
     if (value < 0.5) {
         amountInput.value = 0.5;
-    } else if (value > 5) {
-        amountInput.value = 5;
+    } else if (value > 1) {
+        amountInput.value = 1;
     }
     }
     </script>
