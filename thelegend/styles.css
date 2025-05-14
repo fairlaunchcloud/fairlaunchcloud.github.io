@@ -267,8 +267,8 @@ button {
     align-items: center;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0px 0px 12px rgba(0, 26, 3, 0.9);
-    max-width: 350px;
+    box-shadow: 0px 0px 14px rgba(0, 26, 3, 0.9);
+    max-width: 400px;
     width: 100%;
     text-align: center;
   color: lightgoldenrodyellow;
@@ -301,7 +301,7 @@ button {
 .referral-link-box {
   flex-direction: column; /* Tata letak vertikal untuk layar kecil */
   gap: 5px; /* Jarak antar elemen lebih kecil */
-  padding: 6px; /* Padding lebih kecil untuk box referral link */
+  padding: 5px; /* Padding lebih kecil untuk box referral link */
 }
 
 #referralLink {
