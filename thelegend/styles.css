@@ -32,7 +32,7 @@ body {
   display: flow-root;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: 12px;
   border-radius: 20px;
   box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
   max-width: 400px;
@@ -58,7 +58,7 @@ h3 {
 
 label {
   font-weight: bold;
-  color: whitesmoke;
+  color: darkred;
 }
 
 input, select {
@@ -78,7 +78,7 @@ button {
   border-radius: 8px;
   font-size: 20px;
   cursor: pointer;
-  margin: 14px 5;
+  margin: 14px 7px;
   font-weight: 700;
 }
 
@@ -118,9 +118,9 @@ button:disabled {
   text-decoration: none;
   /* word-break: break-all; */
   overflow: hidden;
-  font-weight: 400;
-  font-size: 12px;
-  color: #0d4849;
+  font-weight: 500;
+  font-size: 15px;
+  color: darkred;
 }
 
 /* #referralLink:hover {
@@ -141,15 +141,15 @@ button:disabled {
 
 .copy-icon {
   font-size: 16px;
-  color: #024f51;
+  color: darkred;
   background: gold;
   border-radius: 10px;
   padding: 10px;
 }
 
 .copy-icon:hover {
-  color: #faffd5;
-  background: #9bb5c1;
+  color: lightgoldenrodyellow;
+  background: lightcoral;
 }
 
 #contributeBtn {
@@ -305,7 +305,7 @@ button {
 }
 
 #referralLink {
-  font-size: 12px; /* Ukuran font lebih kecil untuk link referral */
+  font-size: 11px; /* Ukuran font lebih kecil untuk link referral */
 }
 
 .copy-icon {
