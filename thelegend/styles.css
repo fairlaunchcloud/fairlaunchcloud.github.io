@@ -268,7 +268,7 @@ button {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 12px rgba(0, 26, 3, 0.9);
-    max-width: 320px;
+    max-width: 350px;
     width: 100%;
     text-align: center;
   color: lightgoldenrodyellow;
@@ -276,12 +276,12 @@ button {
 
 h1 {
   font-size: 20px; /* Ukuran font lebih kecil untuk judul */
-  margin-bottom: 10px; /* Jarak bawah lebih kecil */
+  margin-bottom: 20px; /* Jarak bawah lebih kecil */
 }
 
 h3 {
   font-size: 16px; /* Ukuran font lebih kecil untuk subjudul */
-  margin-bottom: 10px; /* Jarak bawah lebih kecil */
+  margin-bottom: 8px; /* Jarak bawah lebih kecil */
 }
 
 .form {
