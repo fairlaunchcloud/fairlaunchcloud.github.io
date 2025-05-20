@@ -120,7 +120,7 @@ body {
     /* word-break: break-all; */
     overflow: hidden;
     font-weight: 600;
-    color: #154579;
+    color: darkgreen;
   }
   
   /* #referralLink:hover {
@@ -141,7 +141,7 @@ body {
   
   .copy-icon {
     font-size: 16px;
-    background: #1e4179;
+    background: aquamarine;
     border-radius: 10px;
     padding: 10px;
   }
@@ -266,7 +266,7 @@ body {
     max-width: 320px;
     width: 100%;
     text-align: center;
-    color: goldenrod;
+    color: aquamarine;
   }
 
   h1 {
@@ -309,7 +309,7 @@ body {
   }
 
   #contractFairlaunch {
-    font-size: 12px; /* Ukuran font lebih kecil untuk teks kontrak fairlaunch */
+    font-size: 13px; /* Ukuran font lebih kecil untuk teks kontrak fairlaunch */
   }
 }
 .wallet-favicon {
