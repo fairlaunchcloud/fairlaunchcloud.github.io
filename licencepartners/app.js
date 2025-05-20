@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = ";ecencepartners";
+const LINKSHORT = "licencepartners";
 const contractAddress = "0x7ADB663BAdB1001D65d8bb62B59316209B4f9654";
 
 const TOKEN_ADDRESSES = {
