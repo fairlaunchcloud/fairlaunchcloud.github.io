@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'Fairlaunch Community Program',
-        description: 'BCORE Pool Stake For Our Community',
+        name: 'Licence Partnership CLABS CAMP',
+        description: 'CLABS CAMP Program For Our Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/bcore-dca/bullclub.png']
+        icons: ['https://fairlaunch.cloud/licencepartners/bullclub.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "bcore-dca";
+const LINKSHORT = ";ecencepartners";
 const contractAddress = "0xB4C46B5595005feb9C825D865b7b6B95e7D892c7";
 
 const TOKEN_ADDRESSES = {
