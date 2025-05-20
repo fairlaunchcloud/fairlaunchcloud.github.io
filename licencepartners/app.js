@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Licence Partnership CLABS CAMP',
         description: 'CLABS CAMP Program For Our Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/licencepartners/bullclub.png']
+        icons: ['https://fairlaunch.cloud/licencepartners/clogo.png']
     }
 });
 
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="bullclub.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="clogo.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
