@@ -86,7 +86,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
 });
 
 const LINKSHORT = ";ecencepartners";
-const contractAddress = "0xB4C46B5595005feb9C825D865b7b6B95e7D892c7";
+const contractAddress = "0x7ADB663BAdB1001D65d8bb62B59316209B4f9654";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0xB4C46B5595005feb9C825D865b7b6B95e7D892c7";
+const DEFAULT_REFERRAL_ADDRESS = "0x7ADB663BAdB1001D65d8bb62B59316209B4f9654";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
