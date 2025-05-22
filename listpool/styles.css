@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   top: 1% !important;
-  background-image: url('https://media.giphy.com/media/l0Iy7z476CjEV3G0w/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-image: url('https://media.giphy.com/media/YpwVvng323pw45tYwv/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body {
   font-family: 'Poppins', sans-serif;
   top: 1% !important;
 
-  background-image: url('https://media.giphy.com/media/I10KytTeZnk2VWsFqc/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-image: url('https://media.giphy.com/media/cX91DIAye9JBUhkA5N/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@ body {
   
   button {
     padding: 10px;
-    background-color: black;
+    background-color: darkblue;
     color: #fdffc9;
     border: none;
     border-radius: 7px;
@@ -251,8 +251,8 @@ body {
     top: 1% !important;
     
   
-    background-image: url('https://media.giphy.com/media/I10KytTeZnk2VWsFqc/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
-    background-size: cover;
+    background-image: url('https://media.giphy.com/media/cX91DIAye9JBUhkA5N/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
