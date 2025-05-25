@@ -1,23 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
-    /* background-color: #f4f4f9; */
-    background: linear-gradient(358deg, #f1f0ec, #894000);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    background: linear-gradient(1deg, #4b2a0f, #00000085);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    color: white;
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f9; */
+  background:transparent;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  top: 1% !important;
+  background-image: url('https://media.giphy.com/media/ALyFXxPgdsaPvSvP0x/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: animateBackground 60s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background:transparent;
+  font-family: 'Poppins', sans-serif;
+  top: 1% !important;
+
+  background-image: url('https://media.giphy.com/media/iy1Bn6reNbbHmIUzKl/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: animateBackground 60s linear infinite;
+  display: flow-root;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+    color: #6c3c0c;
   }
   
   h1 {
@@ -26,7 +47,7 @@ body {
   }
   h3 {
     margin-bottom: 20px;
-    color: white;
+    color: darkblue;
   }
   
   .form {
@@ -37,36 +58,38 @@ body {
   
   label {
     font-weight: bold;
-    color: white;
+    color: darkblue;
   }
   
   input, select {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    color:#3b3205 ;
+    border: 1px solid #154579;
+    border-radius: 7px;
+    font-size: 20px;
+    color:#154579 ;
     font-weight: bold;
   }
   
   button {
     padding: 10px;
-    background-color: #ff8c00;
-    color: black;
+    background-color: darkblue;
+    color: gold;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 7px;
+    font-size: 20px;
     cursor: pointer;
     margin: 5px 0;
     font-weight: 700;
   }
   
   button:hover {
-    background-color: #c0cfcf;
+    background-color: #e7f8ff;
+    color: #8a9163;
   }
   
   button:disabled {
-    background-color: #ccc;
+    background-color: whitesmoke;
+    color: #999360;
     cursor: not-allowed;
   }
   
@@ -97,7 +120,7 @@ body {
     /* word-break: break-all; */
     overflow: hidden;
     font-weight: 600;
-    color: #5b3207;
+    color: #154579;
   }
   
   /* #referralLink:hover {
@@ -118,15 +141,14 @@ body {
   
   .copy-icon {
     font-size: 16px;
-    color: #ffffff;
-    background: #ff8c00;
+    background: #1e4179;
     border-radius: 10px;
     padding: 10px;
   }
   
   .copy-icon:hover {
-    color: #000;
-    background: #d3d3d3;
+    color: #67686b;
+    background: #ffea44;
   }
 
   #contributeBtn {
@@ -198,17 +220,53 @@ body {
 /* Media query untuk layar dengan lebar maksimum 480px (ukuran mobile kecil) */
 @media only screen and (max-width: 480px) {
   body {
-    background: linear-gradient(358deg, #f1f0ec, #894000);
-    padding: 5px; /* Padding lebih kecil untuk layar yang sangat kecil */
-    height: auto; /* Tinggi body disesuaikan dengan konten */
-    min-height: 100vh; /* Pastikan body tetap memenuhi layar */
+    background: linear-gradient(5deg, #3fc3ee, #001434);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    top: 1% !important;
+    background:transparent;
+  
+    background-image: url('https://media.giphy.com/media/ALyFXxPgdsaPvSvP0x/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animateBackground 60s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
   }
 
   .container {
-    padding: 25px; /* Padding lebih kecil untuk container */
-    max-width: 100%; /* Lebar container mengikuti lebar layar */
-    border-radius: 30px; /* Hilangkan border-radius untuk tampilan full-width */
-    box-shadow: 0px 0px 12px rgb(255 255 255 / 90%); /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+    /* padding: 25px; Padding lebih kecil untuk container */
+    /* max-width: 100%; Lebar container mengikuti lebar layar */
+    /* border-radius: 30px; Hilangkan border-radius untuk tampilan full-width */
+    /* box-shadow: 0px 0px 12px rgb(255 255 255 / 90%); Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+    background: linear-gradient(5deg, #3fc3ee, #001434);
+    background:transparent;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    top: 1% !important;
+    
+  
+    background-image: url('https://media.giphy.com/media/iy1Bn6reNbbHmIUzKl/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animateBackground 60s linear infinite;
+    display: flow-root;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px goldenrod;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    color: goldenrod;
   }
 
   h1 {
@@ -226,13 +284,13 @@ body {
   }
 
   input, select {
-    font-size: 12px; /* Ukuran font lebih kecil untuk input dan select */
-    padding: 6px; /* Padding lebih kecil untuk input dan select */
+    font-size: 16px; /* Ukuran font lebih kecil untuk input dan select */
+    padding: 10px; /* Padding lebih kecil untuk input dan select */
   }
 
   button {
-    font-size: 12px; /* Ukuran font lebih kecil untuk tombol */
-    padding: 6px; /* Padding lebih kecil untuk tombol */
+    font-size: 16px; /* Ukuran font lebih kecil untuk tombol */
+    padding: 10px; /* Padding lebih kecil untuk tombol */
   }
 
   .referral-link-box {
@@ -259,3 +317,4 @@ body {
   height: 20px;
   object-fit: contain;
 }
+  

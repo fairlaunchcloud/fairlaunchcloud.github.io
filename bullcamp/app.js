@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#bea099',
+        '--w3m-accent': '#01c7df',
     },
     features: {
         analytics: true,
@@ -46,9 +46,9 @@ const modal = createAppKit({
       ],
     metadata: {
         name: 'Fairlaunch Community Program',
-        description: 'Fairlaunch For Bullclub Community',
+        description: 'BCORE POOL EARNING For Our Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/bullclub/bullclub.png']
+        icons: ['https://fairlaunch.cloud/bullcamp/bullclub.png']
     }
 });
 
@@ -85,16 +85,16 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "bullclub";
+const LINKSHORT = "bullcamp";
 const contractAddress = "0x5BdCac26281fec02c9Eff6525849d7477F56F557";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x554cd6bdD03214b10AafA3e0D4D42De0C5D2937b", // Contract ID token Payment (USDT)
-    PAYTOKENB: "0x...", // Alamat Token B
-    PAYTOKENC: "0x...", // Alamat Token C
+    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
+    PAYTOKENB: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // Contract ID token Payment (USDC)
+    PAYTOKENC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
-};
+    };
 
 const DEFAULT_REFERRAL_ADDRESS = "0x5BdCac26281fec02c9Eff6525849d7477F56F557";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
