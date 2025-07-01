@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Fairlaunch For Our Community</title>
+  <link rel="icon" type="image/x-icon" href="./face.png">
   <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <div class="container">
-    <button id="connectWalletBtn">Connect Wallet</button>
-    <h3>FREEDOM CROWDFUNDING EXPERT PROJECT (IDRT)</h3>
+    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
+    <!-- <w3m-core-button></w3m-core-button> -->
+    <button id="open-modal">Connect Wallet</button>
+    <h3>FACE CAMP PROGRAM <br> FOR COMMUNITY DEVELOPMENT</h3>
+    <h3><a href="https://fairlaunch.cloud/face4vip/">| Visit Link For VIP Program|</a></h3>
     <div style="display:flex; justify-content: center; margin-bottom: 10px;">
       <img src="face.png" style="width: 18%;" />
     </div>
@@ -27,11 +31,13 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="100000" max="10000000" onblur="validateAmount()"/>
+      <input type="number" id="amount" placeholder="Enter amount" min="10" max="99" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
-        <option value="PAYTOKENA">IDRT</option>
+        <option value="PAYTOKENA">USDT</option>
+        <option value="PAYTOKENB">USDC</option>
+        <option value="PAYTOKENC">USDC.e</option>
         <!-- <option value="PAYTOKENB">DAI</option>
         <option value="PAYTOKENC">FDUSD</option>
         <option value="PAYTOKEND">BUSD</option>
@@ -47,16 +53,24 @@
     </div>
   </div>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
-  <script src="app.js"></script>
+ <script type="module" src="app.js"></script>
+ <script>
+   // Polyfill process for browser
+   window.process = {
+     env: {
+       NODE_ENV: 'production' // or 'production' if you're in production
+     }
+   };
+ </script>
   <script>
     function validateAmount() {
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 100000) {
-        amountInput.value = 100000;
-    } else if (value > 10000000) {
-        amountInput.value = 10000000;
+    if (value < 10) {
+        amountInput.value = 10;
+    } else if (value > 99) {
+        amountInput.value = 99;
     }
     }
     </script>
