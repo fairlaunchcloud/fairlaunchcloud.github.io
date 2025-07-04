@@ -38,7 +38,7 @@ body {
   max-width: 400px;
   width: 100%;
   text-align: center;
-    color: yellow;
+    color: aqua;
   }
   
   h1 {
@@ -72,8 +72,8 @@ body {
   
   button {
     padding: 10px;
-    background-color: #0f250f;
-    color: gold;
+    background-color: #000080;
+    color: aqua;
     border: none;
     border-radius: 7px;
     font-size: 20px;
