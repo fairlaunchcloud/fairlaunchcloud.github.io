@@ -266,7 +266,7 @@ body {
     max-width: 320px;
     width: 100%;
     text-align: center;
-    color: goldenrod;
+    color: lightgoldenrodyellow;
   }
 
   h1 {
@@ -290,7 +290,7 @@ body {
 
   button {
     font-size: 16px; /* Ukuran font lebih kecil untuk tombol */
-    padding: 12px; /* Padding lebih kecil untuk tombol */
+    padding: 10px; /* Padding lebih kecil untuk tombol */
   }
 
   .referral-link-box {

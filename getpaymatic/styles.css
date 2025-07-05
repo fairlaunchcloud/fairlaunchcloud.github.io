@@ -289,8 +289,8 @@ body {
   }
 
   button {
-    font-size: 12px; /* Ukuran font lebih kecil untuk tombol */
-    padding: 6px; /* Padding lebih kecil untuk tombol */
+    font-size: 16px; /* Ukuran font lebih kecil untuk tombol */
+    padding: 10px; /* Padding lebih kecil untuk tombol */
   }
 
   .referral-link-box {
