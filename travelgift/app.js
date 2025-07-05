@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#01c7df',
+        '--w3m-accent': '#00ff00',
     },
     features: {
         analytics: true,
@@ -46,9 +46,9 @@ const modal = createAppKit({
       ],
     metadata: {
         name: 'Fairlaunch For Community Suppoert',
-        description: 'Community Support For Gold RWA Burning',
+        description: 'Community Support For Travel Gift',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/burn2fgold/fgold.png']
+        icons: ['https://fairlaunch.cloud/travelgift/aura.png']
     }
 });
 
@@ -85,18 +85,18 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "burn2fgold";
-const contractAddress = "0x68B356c5C165484Fb1EA2ca7418E00acc19E8B79";
+const LINKSHORT = "travelgift";
+const contractAddress = "0x8dBF9e53eccA95b931b1947F5dB9E41217f2a7b5";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x6b7682a9fdA1d482A3779C9489DC62437BB58945", // Contract ID token Payment (FGOLD)
-    PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
-    PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
+    PAYTOKENA: "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063", // Contract ID token Payment (DAI)
+    PAYTOKENB: "0xCC135a9d941d2a1f40d55a04eb6A90d9835dA7d7", // Contract ID token Payment (BALL)
+    PAYTOKENC: "0x8DF4c954C51E5ccBa51b8a21cC3fF6347760b31a", // Contract ID token Payment (TPAY)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0x68B356c5C165484Fb1EA2ca7418E00acc19E8B79";
+const DEFAULT_REFERRAL_ADDRESS = "0x8dBF9e53eccA95b931b1947F5dB9E41217f2a7b5";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="fgold.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="aura.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
