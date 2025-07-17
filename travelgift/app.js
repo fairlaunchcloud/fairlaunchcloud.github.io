@@ -89,8 +89,8 @@ const LINKSHORT = "travelgift";
 const contractAddress = "0x8dBF9e53eccA95b931b1947F5dB9E41217f2a7b5";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063", // Contract ID token Payment (DAI)
-    PAYTOKENB: "0xCC135a9d941d2a1f40d55a04eb6A90d9835dA7d7", // Contract ID token Payment (BALL)
+    PAYTOKENA: "0xCC135a9d941d2a1f40d55a04eb6A90d9835dA7d7", // Contract ID token Payment (BALL)
+    PAYTOKENB: "0x4a24F93c4416A5a2A36ce8fA6925198198f4EF79", // Contract ID token Payment (GET)
     PAYTOKENC: "0x8DF4c954C51E5ccBa51b8a21cC3fF6347760b31a", // Contract ID token Payment (TPAY)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
