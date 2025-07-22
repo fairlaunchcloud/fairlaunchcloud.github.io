@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   top: 1% !important;
-  background-image: url('https://media.giphy.com/media/4xfo8lJzizCKSP1MQ4/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-image: url('https://media.giphy.com/media/ZrLB9uQPK1k9dbPvr9/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,8 +23,8 @@ body {
   font-family: 'Poppins', sans-serif;
   top: 1% !important;
 
-  background-image: url('https://media.giphy.com/media/SXaS4riHvjALWld1Nk/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
-  background-size: contain;
+  background-image: url('https://media.giphy.com/media/gkZR3u4JFT3lEUm5n2/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-size: contain ;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ body {
   max-width: 400px;
   width: 100%;
   text-align: center;
-    color: lightgoldenrodyellow;
+    color:#404040;
   }
   
   h1 {
@@ -47,7 +47,7 @@ body {
   }
   h3 {
     margin-bottom: 20px;
-    color: lightgoldenrodyellow;
+    color: navy;
   }
   
   .form {
@@ -58,7 +58,7 @@ body {
   
   label {
     font-weight: bold;
-    color: darkred;
+    color: white;
   }
   
   input, select {
@@ -72,8 +72,8 @@ body {
   
   button {
     padding: 10px;
-    background-color: darkred;
-    color: gold;
+    background-color: #191970;
+    color: whitesmoke;
     border: none;
     border-radius: 7px;
     font-size: 20px;
@@ -119,8 +119,8 @@ body {
     text-decoration: none;
     /* word-break: break-all; */
     overflow: hidden;
-    font-weight: 500;
-    color: darkred;
+    font-weight: 600;
+    color: #154579;
   }
   
   /* #referralLink:hover {
@@ -141,14 +141,14 @@ body {
   
   .copy-icon {
     font-size: 16px;
-    background: darkred;
+    background: #1e4179;
     border-radius: 10px;
     padding: 10px;
   }
   
   .copy-icon:hover {
-    color: #67686b;
-    background: #ffea44;
+    color: #1e4179;
+    background: #80f1f1;
   }
 
   #contributeBtn {
@@ -226,7 +226,7 @@ body {
     top: 1% !important;
     background:transparent;
   
-    background-image: url('https://media.giphy.com/media/SXaS4riHvjALWld1Nk/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-image: url('https://media.giphy.com/media/SNnrsHg2pPAdz1Fxqa/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -251,7 +251,7 @@ body {
     top: 1% !important;
     
   
-    background-image: url('https://media.giphy.com/media/SXaS4riHvjALWld1Nk/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-image: url('https://media.giphy.com/media/jldvCK0BvuDntQwhxe/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,11 +262,11 @@ body {
     align-items: center;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0px 0px 12px darkred;
+    box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
     max-width: 320px;
     width: 100%;
     text-align: center;
-    color: lightgoldenrodyellow;
+    color: #faffd9;
   }
 
   h1 {
@@ -284,13 +284,13 @@ body {
   }
 
   input, select {
-    font-size: 16px; /* Ukuran font lebih kecil untuk input dan select */
-    padding: 10px; /* Padding lebih kecil untuk input dan select */
+    font-size: 20px; /* Ukuran font lebih kecil untuk input dan select */
+    padding: 8px; /* Padding lebih kecil untuk input dan select */
   }
 
   button {
-    font-size: 16px; /* Ukuran font lebih kecil untuk tombol */
-    padding: 10px; /* Padding lebih kecil untuk tombol */
+    font-size: 20px; /* Ukuran font lebih kecil untuk tombol */
+    padding: 8px; /* Padding lebih kecil untuk tombol */
   }
 
   .referral-link-box {
