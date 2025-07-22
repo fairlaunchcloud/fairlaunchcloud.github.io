@@ -21,6 +21,7 @@ body {
 .container {
   background:transparent;
   font-family: 'Poppins', sans-serif;
+  font-weight: bold;
   top: 1% !important;
 
   background-image: url('https://media.giphy.com/media/gkZR3u4JFT3lEUm5n2/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
@@ -38,7 +39,7 @@ body {
   max-width: 400px;
   width: 100%;
   text-align: center;
-    color:#404040;
+    color:saddlebrown;
   }
   
   h1 {
@@ -47,7 +48,8 @@ body {
   }
   h3 {
     margin-bottom: 20px;
-    color: navy;
+    color: saddlebrown;
+    
   }
   
   .form {
@@ -58,7 +60,7 @@ body {
   
   label {
     font-weight: bold;
-    color: white;
+    color: navy;
   }
   
   input, select {
