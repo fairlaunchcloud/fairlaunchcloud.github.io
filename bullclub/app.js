@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'BCORE Pool Earning For Our Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/bcore-perfume/bullclub.png']
+        icons: ['https://fairlaunch.cloud/bullclub/bullclub.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "bcore-perfume";
+const LINKSHORT = "bullclub";
 const contractAddress = "0x33a5cf9A5f0251faaAA403ccC2ad21Eb9D0276d1";
 
 const TOKEN_ADDRESSES = {
