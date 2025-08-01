@@ -32,10 +32,10 @@ body {
   display: flow-root;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 22px;
+  border-radius: 22px;
   box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
-  max-width: 400px;
+  max-width: 425px;
   width: 100%;
   text-align: center;
     color: lightgoldenrodyellow;
@@ -65,7 +65,7 @@ body {
     padding: 10px;
     border: 1px solid #154579;
     border-radius: 7px;
-    font-size: 20px;
+    font-size: 17px;
     color:#154579 ;
     font-weight: bold;
   }
@@ -78,7 +78,7 @@ body {
     border-radius: 7px;
     font-size: 20px;
     cursor: pointer;
-    margin: 5px 0;
+    margin: 4px 0;
     font-weight: 700;
   }
   
@@ -99,9 +99,9 @@ body {
   }
   /* Styling untuk box link referral */
 #referralLinkContainer {
-    margin-top: 10px;
+    margin-top: 8px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   
   .referral-link-box {
