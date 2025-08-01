@@ -23,7 +23,7 @@ body {
   font-family: 'Poppins', sans-serif;
   top: 1% !important;
 
-  background-image: url('https://media.giphy.com/media/iy1Bn6reNbbHmIUzKl/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-image: url('https://media.giphy.com/media/0XUiPM71UYkfArmm3L/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ body {
   max-width: 400px;
   width: 100%;
   text-align: center;
-    color: firebrick;
+    color: gold;
   }
   
   h1 {
@@ -47,7 +47,7 @@ body {
   }
   h3 {
     margin-bottom: 20px;
-    color: firebrick;
+    color: lightgoldenrodyellow;
   }
   
   .form {
@@ -72,7 +72,7 @@ body {
   
   button {
     padding: 10px;
-    background-color: darkblue;
+    background-color: rgb(63, 5, 63);
     color: gold;
     border: none;
     border-radius: 7px;
