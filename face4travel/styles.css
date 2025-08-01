@@ -184,7 +184,7 @@ body {
   }
 
   .form {
-    gap: 8px; /* Kurangi jarak antar elemen form */
+    gap: 7px; /* Kurangi jarak antar elemen form */
   }
 
   input, select {
