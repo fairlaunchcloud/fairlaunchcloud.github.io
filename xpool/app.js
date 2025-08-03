@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#dc143c',
+        '--w3m-accent': 'aquamarine',
     },
     features: {
         analytics: true,
@@ -46,9 +46,9 @@ const modal = createAppKit({
       ],
     metadata: {
         name: 'Fairlaunch Community Program',
-        description: 'FACE POOL FOR RWA TRAVEL PROGRAM',
+        description: 'XPOOL OFFERING FOR COMMUNITY DEVELOPMENT',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/face4travel/face.png']
+        icons: ['https://fairlaunch.cloud/xpool/btfx.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "face4travel";
+const LINKSHORT = "xpool";
 const contractAddress = "0x91bE79428F3CFA3E16e75e8934A55eA6b221f67F";
 
 const TOKEN_ADDRESSES = {
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="face.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="btfx.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
