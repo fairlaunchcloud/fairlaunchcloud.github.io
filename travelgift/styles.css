@@ -38,7 +38,7 @@ body {
   max-width: 400px;
   width: 100%;
   text-align: center;
-    color: lightgoldenrodyellow;
+    color: whitesmoke;
   }
   
   h1 {
@@ -199,12 +199,12 @@ body {
 
   .referral-link-box {
     flex-direction: column; /* Ubah tata letak menjadi vertikal */
-    gap: 5px; /* Kurangi jarak antar elemen */
-    padding: 8px; /* Kurangi padding pada box referral link */
+    gap: 2px; /* Kurangi jarak antar elemen */
+    padding: 6px; /* Kurangi padding pada box referral link */
   }
 
   #referralLink {
-    font-size: 14px; /* Perkecil ukuran font untuk link referral */
+    font-size: 12px; /* Perkecil ukuran font untuk link referral */
   }
 
   .copy-icon {
@@ -266,7 +266,7 @@ body {
     max-width: 320px;
     width: 100%;
     text-align: center;
-    color: lightgoldenrodyellow;
+    color: whitesmoke;
   }
 
   h1 {
