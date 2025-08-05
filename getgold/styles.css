@@ -83,8 +83,8 @@ body {
   }
   
   button:hover {
-    background-color: gray;
-    color: gold;
+    background-color: floralwhite;
+    color: darkgrey;
   }
   
   button:disabled {
@@ -147,8 +147,8 @@ body {
   }
   
   .copy-icon:hover {
-    color: gold;
-    background: lightslategrey;
+    color: lightgoldenrodyellow;
+    background: lightsteelblue;
   }
 
   #contributeBtn {
