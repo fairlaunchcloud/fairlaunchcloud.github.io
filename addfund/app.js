@@ -46,9 +46,9 @@ const modal = createAppKit({
       ],
     metadata: {
         name: 'Fairlaunch For Community Suppoert',
-        description: 'Community Support For Gold RWA Burning',
+        description: 'Community Support For B2B Partners Platform',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/burn2fgold/fgold.png']
+        icons: ['https://fairlaunch.cloud/addfund/fif.png']
     }
 });
 
@@ -90,8 +90,8 @@ const contractAddress = "0xBDfcc71f5C36C64bc66A89Db0b21729eE42cd126";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063", // Contract ID token Payment (DAI)
-    PAYTOKENB: "0xCC135a9d941d2a1f40d55a04eb6A90d9835dA7d7", // Contract ID token Payment (BALL)
-    PAYTOKENC: "0x8DF4c954C51E5ccBa51b8a21cC3fF6347760b31a", // Contract ID token Payment (TPAY)
+    PAYTOKENB: "0x2e1AD108fF1D8C782fcBbB89AAd783aC49586756", // Contract ID token Payment (TUSD)
+    PAYTOKENC: "0xCC135a9d941d2a1f40d55a04eb6A90d9835dA7d7", // Contract ID token Payment (BALL)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };

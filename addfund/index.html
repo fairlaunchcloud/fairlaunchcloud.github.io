@@ -22,7 +22,7 @@
     </div>
     <span>FIF FOR ADD  ACCOUNT BALANCE:<br> | Fee Service:10% |<br>
       <p><a href="https://linktr.ee/fifcamp_b2b" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">⏩ Visit Link For FIF Core Support👉<br>
-    <span><br><a style="color: aqua;">TOKEN RATIO FOR ADD BALANCE<br>PARTNERS ACCOUNT:<br>( 1 FIF / $1.00 )</a><br>
+    <span><br><a style="color: aqua;">TOKEN RATIO FOR ADD BALANCE<br>PARTNERS ACCOUNT:<br>( 10 TOKEN / FIF )</a><br>
     <h4><span style="color: yellow;">Contract ID: <div id="contractFairlaunch"></div></span><h4>
     <div id="referralLinkContainer" style="display: none;">
         <p>Your Referral Link:</p>
@@ -35,13 +35,13 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="20" max="200" onblur="validateAmount()"/>
+      <input type="number" id="amount" placeholder="Enter amount" min="12" max="1200" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
         <option value="PAYTOKENA">DAI</option>
-        <option value="PAYTOKENB">BALL</option>
-        <option value="PAYTOKENC">TPAY</option>
+        <option value="PAYTOKENB">TUSD</option>
+        <option value="PAYTOKENC">BALL</option>
         <!-- <option value="PAYTOKENB">DAI</option>
         <option value="PAYTOKENA">FGOLD</option>
         <option value="PAYTOKENB">ZAP</option>
@@ -73,10 +73,10 @@
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 20) {
-        amountInput.value = 20;
-    } else if (value > 200) {
-        amountInput.value = 200;
+    if (value < 12) {
+        amountInput.value = 12;
+    } else if (value > 1200) {
+        amountInput.value = 1200;
     }
     }
     </script>
