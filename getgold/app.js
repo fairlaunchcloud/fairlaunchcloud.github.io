@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#01c7df',
+        '--w3m-accent': 'gold',
     },
     features: {
         analytics: true,
@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch For Community Suppoert',
         description: 'Community Support For Gold RWA Burning',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/burn2fgold/fgold.png']
+        icons: ['https://fairlaunch.cloud/getgold/zap.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "burn2fgold";
+const LINKSHORT = "getgold";
 const contractAddress = "0x68B356c5C165484Fb1EA2ca7418E00acc19E8B79";
 
 const TOKEN_ADDRESSES = {
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="fgold.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="zap.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
