@@ -295,17 +295,17 @@ body {
 
   .referral-link-box {
     flex-direction: column; /* Tata letak vertikal untuk layar kecil */
-    gap: 2px; /* Jarak antar elemen lebih kecil */
-    padding: 3px; /* Padding lebih kecil untuk box referral link */
+    gap: 4px; /* Jarak antar elemen lebih kecil */
+    padding: 5px; /* Padding lebih kecil untuk box referral link */
   }
 
   #referralLink {
-    font-size: 8px; /* Ukuran font lebih kecil untuk link referral */
+    font-size: 11px; /* Ukuran font lebih kecil untuk link referral */
   }
 
   .copy-icon {
-    font-size: 8px; /* Ukuran ikon lebih kecil */
-    padding: 5px; /* Padding lebih kecil untuk ikon copy */
+    font-size: 10px; /* Ukuran ikon lebih kecil */
+    padding: 8px; /* Padding lebih kecil untuk ikon copy */
   }
 
   #contractFairlaunch {
