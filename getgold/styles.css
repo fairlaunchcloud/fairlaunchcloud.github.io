@@ -72,8 +72,8 @@ body {
   
   button {
     padding: 10px;
-    background-color: black;
-    color: #ffea44;
+    background-color: gold;
+    color: black;
     border: none;
     border-radius: 7px;
     font-size: 20px;
@@ -83,8 +83,8 @@ body {
   }
   
   button:hover {
-    background-color: #e7f8ff;
-    color: #8a9163;
+    background-color: gray;
+    color: gold;
   }
   
   button:disabled {
@@ -120,7 +120,7 @@ body {
     /* word-break: break-all; */
     overflow: hidden;
     font-weight: 600;
-    color: #154579;
+    color: black;
   }
   
   /* #referralLink:hover {
@@ -141,14 +141,14 @@ body {
   
   .copy-icon {
     font-size: 16px;
-    background: #1e4179;
+    background: gold;
     border-radius: 10px;
     padding: 10px;
   }
   
   .copy-icon:hover {
-    color: #67686b;
-    background: #ffea44;
+    color: gold;
+    background: lightslategrey;
   }
 
   #contributeBtn {
