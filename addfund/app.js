@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#008ce7',
+        '--w3m-accent': '#01c7df',
     },
     features: {
         analytics: true,
@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'Fairlaunch Community Program',
-        description: 'FACE POOL FOR RWA TRAVEL PROGRAM (VIP)',
+        name: 'Fairlaunch For Community Suppoert',
+        description: 'Community Support For Gold RWA Burning',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/face4travel/face.png']
+        icons: ['https://fairlaunch.cloud/burn2fgold/fgold.png']
     }
 });
 
@@ -85,13 +85,13 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "face4vip";
+const LINKSHORT = "addfund";
 const contractAddress = "0xBDfcc71f5C36C64bc66A89Db0b21729eE42cd126";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
-    PAYTOKENB: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // Contract ID token Payment (USDC)
-    PAYTOKENC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", // Contract ID token Payment (USDC.e)
+    PAYTOKENA: "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063", // Contract ID token Payment (DAI)
+    PAYTOKENB: "0xCC135a9d941d2a1f40d55a04eb6A90d9835dA7d7", // Contract ID token Payment (BALL)
+    PAYTOKENC: "0x8DF4c954C51E5ccBa51b8a21cC3fF6347760b31a", // Contract ID token Payment (TPAY)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="face.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="fif.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
