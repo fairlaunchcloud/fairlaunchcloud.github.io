@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'Fairlaunch Community Program',
-        description: 'BCORE Pool Earning For Our Community',
+        name: 'BitZyx Treesuree Project',
+        description: 'Private Placement Collateral For PlaxLabs Group',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/bullclub/bullclub.png']
+        icons: ['https://fairlaunch.cloud/btz-bond/btz.png']
     }
 });
 
@@ -85,13 +85,13 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "bullclub";
+const LINKSHORT = "btz-bond";
 const contractAddress = "0x33a5cf9A5f0251faaAA403ccC2ad21Eb9D0276d1";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
-    PAYTOKENB: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // Contract ID token Payment (USDC)
-    PAYTOKENC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", // Contract ID token Payment (USDC.e)
+    PAYTOKENA: "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6", // Contract ID token Payment Wrapped BTC (WBTC)
+    PAYTOKENB: "0x...", // Alamat Token B
+    PAYTOKENC: "0x...", // Alamat Token C
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="bullclub.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="btz.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;

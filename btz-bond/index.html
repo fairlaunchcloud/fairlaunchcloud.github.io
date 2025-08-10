@@ -4,23 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Fairlaunch For BCORE Community</title>
-  <link rel="icon" type="image/x-icon" href="./bullclub.png">
+  <link rel="icon" type="image/x-icon" href="./btz.png">
   <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-  <div class="container">
+  <div class="container"><br><br><br><br>
     <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
     <!-- <w3m-core-button></w3m-core-button> -->
     <button id="open-modal">Connect Wallet</button>
-    <h3>BULLCAMP PROGRAM <br> FOR COMMUNITY DEVELOPMENT</h3>
-    <h3><a href="https://linktr.ee/aurasupport" style="color: lightskyblue; text-decoration: none;" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='lightskyblue'">"FREE AURA VOUCHER = Min USDT 100.00"</h3>
-    <h3><a href="https://fairlaunch.cloud/bullcamp/" style="color: whitesmoke; text-decoration: none;" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='whitesmoke'"> ⏪ Back to Starter Program</a></h3>
+    <h3>BITZYX PLACEMENT PROJECT<br>FOR PLAXLABS TREESUREE FUND<br><a style="color: aquamarine;">| Collateral Supply = Min 0.00004 WBTC |<br><br>
+    <a href="https://app.aave.com/markets/" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">Collateral Provider : AAVE⏩</a></h3>
     <div style="display:flex; justify-content: center; margin-bottom: 10px;">
-      <img src="bullclub.png" style="width: 18%;" />
+      <img src="wbtc.png" style="width: 17%;" />
+      <img src="arrow-left.png" style="width: 15%;" />
+      <img src="btz.png" style="width: 17%;" />
     </div>
-    <span>Fairlaunch Contract: <div id="contractFairlaunch"></div></span>
+    <p><a href="https://app.uniswap.org/positions" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">⏩ Liquidity Pool Provider : UNISWAP (BTZ-WBTC)
+</a></p>
+    <h4><span style="color: lightgoldenrodyellow;">Collateral Supply Contract: <div id="contractFairlaunch"></div></span><h4>
     <div id="referralLinkContainer" style="display: none;">
         <p>Your Referral Link:</p>
         <div class="referral-link-box">
@@ -32,24 +35,22 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="100" max="1000" onblur="validateAmount()"/>
+      <input type="number" id="amount" placeholder="Enter amount" min="0.00004" max="1" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
-        <option value="PAYTOKENA">USDT</option>
-        <option value="PAYTOKENB">USDC</option>
-        <option value="PAYTOKENC">USDC.e</option>
+        <option value="PAYTOKENA">WBTC</option>
+        <!-- <option value="PAYTOKENB">USDC</option> -->
+        <!-- <option value="PAYTOKENC">USDC.e</option> -->
         <!-- <option value="PAYTOKENB">DAI</option>
         <option value="PAYTOKENC">FDUSD</option>
         <option value="PAYTOKEND">BUSD</option>
         <option value="PAYTOKENE">USDC</option> -->
       </select>
-
+      <a href="https://plaxswap.io/pool/" style="color: palegoldenrod; text-decoration: none;" onmouseover="this.style.color='aquamarine'" onmouseout="this.style.color='palegoldenrod'" style="font-size: 7px; ">** Purchase stBitZyx for BTZ Poll⏩</a><br>
       <input type="hidden" id="referral"/>
-
       <button id="approveBtn">Approve Allowance</button>
       <button id="contributeBtn">Contribute</button>
-
       <p id="status"></p>
     </div>
   </div>
@@ -68,10 +69,10 @@
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 100) {
-        amountInput.value = 100;
-    } else if (value > 1000) {
-        amountInput.value = 1000;
+    if (value < 0.00004) {
+        amountInput.value = 0.00004;
+    } else if (value > 1) {
+        amountInput.value = 1;
     }
     }
     </script>
