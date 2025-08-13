@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0x91bE79428F3CFA3E16e75e8934A55eA6b221f67F";
+const DEFAULT_REFERRAL_ADDRESS = "0xBdb6B9Ba9c673Ec70719964281F17a607309fdB8";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
