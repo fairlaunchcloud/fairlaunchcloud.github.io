@@ -7,9 +7,9 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url('https://media.giphy.com/media/p7k2JyaoiDtODAWseQ/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g');
-  background-position: justify;
-  background-size: contain;
+  background-image: url('https://media.giphy.com/media/7AtHoQ9XWbpwLRxs0t/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+  background-position: center;
+  background-size: cover;
   padding: 0 8%;
 }
 .logo {
