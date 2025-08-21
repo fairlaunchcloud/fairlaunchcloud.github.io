@@ -7,9 +7,9 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url('https://media.giphy.com/media/1IP7fmn2KnvfW/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+  background-image: url('https://media.giphy.com/media/p7k2JyaoiDtODAWseQ/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g');
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   padding: 0 8%;
 }
 .logo {
@@ -32,10 +32,10 @@
 }
 .content button {
   background: transparent;
-  border: 2px solid #ffd700;
+  border: 2px solid #00ffff;
   outline: none;
   padding: 12px 25px;
-  color: #ffff4a;
+  color: whitesmoke;
   display: flex;
   align-items: center;
   margin-top: 30px;
