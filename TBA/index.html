@@ -1,75 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Fairlaunch For Our Community</title>
-  <link rel="icon" type="image/x-icon" href="./tba.png">
-  <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
-<body>
-  <div class="container">
-    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
-    <!-- <w3m-core-button></w3m-core-button> -->
-    <button id="open-modal">Connect Wallet</button>
-    <h3>TBA BLOCKCHAIN POOL STAKING</h3>
-    <div style="display:flex; justify-content: center; margin-bottom: 10px;">
-      <img src="tba.png" style="width: 18%;" />
-    </div>
-    <span>Fairlaunch Contract: <div id="contractFairlaunch"></div></span>
-    <div id="referralLinkContainer" style="display: none;">
-        <p>Your Referral Link:</p>
-        <div class="referral-link-box">
-          <div id="referralLink"></div>
-          <button id="copyReferralLinkBtn">
-            <span class="copy-icon">COPY</span>
-          </button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FairLaunch Will be Back </title>
+    <link rel="icon" type="image/x-icon" href="./fca.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/lst-logo.png" alt="logo" class="logo" width="200%" />
+
+      <div class="content">
+        <p style="font-size:24px; ">How to Get Various Assets in the Defi World !</p><br>
+        
+        <h1><a style="color: #00ffff">FairLaunch </a><span>For Stake Pool CLK by TBA </span><a style="color: whitesmoke">has FINALLY ! </a></h1><br><br><br>
+        
+        <div class="launch-time">
+          <div>
+            <p id="days">0</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours">2</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="minutes">59</p>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <p id="seconds">59</p>
+            <span>Seconds</span>
+          </div>
+        </div><br><br>
+        <button type="button">
+          Visit Link to Join Pool of Our Community <a href="https://plaxswap.io/pools"> <img src="images/triangle.png" alt="triangle" />
+        </button>
       </div>
-    <div class="form">
-      <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="1" max="10000" onblur="validateAmount()"/>
-
-      <label for="token">Token:</label>
-      <select id="token">
-        <option value="PAYTOKENA">USDT</option>
-        <!-- <option value="PAYTOKENB">DAI</option>
-        <option value="PAYTOKENC">FDUSD</option>
-        <option value="PAYTOKEND">BUSD</option>
-        <option value="PAYTOKENE">USDC</option> -->
-      </select>
-      <a style="color: gray; text-decoration: none;" style="font-size: 7px; ">Price Update: 1 CLK = 0.01 USDT</a><br></h3>
-      <input type="hidden" id="referral"/>
-
-      <button id="approveBtn">Approve Allowance</button>
-      <button id="contributeBtn">Contribute</button>
-
-      <p id="status"></p>
+      <img src="images/img.png" class="rocket" alt="rocket" width="100%">
     </div>
-  </div>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
- <script type="module" src="app.js"></script>
- <script>
-   // Polyfill process for browser
-   window.process = {
-     env: {
-       NODE_ENV: 'production' // or 'production' if you're in production
-     }
-   };
- </script>
-  <script>
-    function validateAmount() {
-    let amountInput = document.getElementById("amount");
-    let value = parseInt(amountInput.value);
-
-    if (value < 1) {
-        amountInput.value = 1;
-    } else if (value > 10000) {
-        amountInput.value = 10000;
-    }
-    }
-    </script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
