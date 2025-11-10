@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'XPOOL OFFERING FOR COMMUNITY DEVELOPMENT',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/xpool/btfx.png']
+        icons: ['https://fairlaunch.cloud/getxpool/btfx.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "xpool";
+const LINKSHORT = "getxpool";
 const contractAddress = "0x91bE79428F3CFA3E16e75e8934A55eA6b221f67F";
 
 const TOKEN_ADDRESSES = {
