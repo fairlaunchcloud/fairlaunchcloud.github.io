@@ -64,7 +64,7 @@
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 1) {
+    if (value < 1000) {
         amountInput.value = 1000;
     } else if (value > 100000) {
         amountInput.value = 100000;
