@@ -84,11 +84,11 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "TBA";
+const LINKSHORT = "CMiner";
 const contractAddress = "0x53800AfC05C53D7AF092109e0188398eA8e493F5";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
+    PAYTOKENA: "0x1EdC86d411AD224f97b6Ad89C4446683C1b0BAaE", // Contract ID token Payment (CLK)
     PAYTOKENB: "0x...", // Alamat Token B
     PAYTOKENC: "0x...", // Alamat Token C
     PAYTOKEND: "0x...", // Alamat Token D
