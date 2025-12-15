@@ -44,10 +44,10 @@ const modal = createAppKit({
         '15c8b91ade1a4e58f3ce4e7a0dd7f42b47db0c8df7e0d84f63eb39bcb96c4e0f'
       ],
     metadata: {
-        name: 'Fairlaunch Community Program',
-        description: 'Fairlaunch For TBA Blockchain Pool Staking',
+        name: 'CMiner Pool For Blockchain Community ',
+        description: 'CMiner For Blockchain Pool Staking',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/TBA/tba.png']
+        icons: ['https://fairlaunch.cloud/CMiner/CMiner.png']
     }
 });
 
@@ -119,7 +119,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="tba.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="CMiner.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
