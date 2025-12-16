@@ -47,7 +47,7 @@ const modal = createAppKit({
         name: 'CMiner Pool For Blockchain Community ',
         description: 'CMiner For Blockchain Pool Staking',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/CMiner/CMiner.png']
+        icons: ['https://fairlaunch.cloud/CMiner/cmr.png']
     }
 });
 
@@ -119,7 +119,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="CMiner.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="cmr.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
