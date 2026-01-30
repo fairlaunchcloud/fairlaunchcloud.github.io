@@ -47,7 +47,7 @@ const modal = createAppKit({
         name: 'CMiner Pool For Blockchain Community ',
         description: 'CMiner For Blockchain Pool Staking',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/CMiner/cmr.png']
+        icons: ['https://fairlaunch.cloud/CMiner-update/cmr.png']
     }
 });
 
@@ -84,7 +84,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "CMiner";
+const LINKSHORT = "CMiner-update";
 const contractAddress = "0x53800AfC05C53D7AF092109e0188398eA8e493F5";
 
 const TOKEN_ADDRESSES = {
