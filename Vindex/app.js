@@ -2513,7 +2513,7 @@ function shortenAddress(address) {
   
   // Fungsi untuk menghasilkan link referral
   function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`; // Gunakan contractAddress
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`; // Gunakan contractAddress
     return `${baseUrl}?refId=${address}`;
   }
   

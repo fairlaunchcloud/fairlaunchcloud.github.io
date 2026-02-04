@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'Defi Camp Community Development',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/deficamp/sme.png']
+        icons: ['https://fairlaunch.vip/deficamp/sme.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 

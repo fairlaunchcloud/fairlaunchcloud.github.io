@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'Fairlaunch For RCA Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/ENDY/rca.png']
+        icons: ['https://fairlaunch.vip/ENDY/rca.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 

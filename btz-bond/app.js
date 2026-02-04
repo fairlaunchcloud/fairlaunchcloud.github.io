@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'BitZyx Treesuree Project',
         description: 'Private Placement Collateral For PlaxLabs Group',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/btz-bond/btz.png']
+        icons: ['https://fairlaunch.vip/btz-bond/btz.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 

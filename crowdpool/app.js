@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'BitFriX (BTFX) Bond Offering Program',
         description: 'CROWDPOOL DAO FOR BITFRIX FUND',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/crowdpool/btfx.png']
+        icons: ['https://fairlaunch.vip/crowdpool/btfx.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 

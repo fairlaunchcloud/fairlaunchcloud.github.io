@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch For Community Suppoert',
         description: 'Community Support For Gold RWA Burning',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/getgold/zap.png']
+        icons: ['https://fairlaunch.vip/getgold/zap.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 

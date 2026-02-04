@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch Community Program',
         description: 'Clabs Loyality Program For Our Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/ccs-vip/rfidc.png']
+        icons: ['https://fairlaunch.vip/ccs-vip/rfidc.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 

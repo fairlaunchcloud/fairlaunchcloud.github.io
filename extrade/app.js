@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch For Community Development',
         description: 'Community Support For ETA Community Camp',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/extrade/eta.png']
+        icons: ['https://fairlaunch.vip/extrade/eta.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 

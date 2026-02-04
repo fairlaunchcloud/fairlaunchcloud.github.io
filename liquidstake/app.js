@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'FairLaunch For Community Development',
         description: 'FairLaunch For LIST Community',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/liquidstake/list.png']
+        icons: ['https://fairlaunch.vip/liquidstake/list.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 

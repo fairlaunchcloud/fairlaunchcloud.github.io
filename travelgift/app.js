@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch For Community Suppoert',
         description: 'Community Support For Travel Gift',
         url: window.location.href,
-        icons: ['https://fairlaunch.cloud/travelgift/aura.png']
+        icons: ['https://fairlaunch.vip/travelgift/aura.png']
     }
 });
 
@@ -151,7 +151,7 @@ function updateUI() {
 }
 
 function generateReferralLink(address) {
-    const baseUrl = `https://fairlaunch.cloud/${LINKSHORT}`;
+    const baseUrl = `https://fairlaunch.vip/${LINKSHORT}`;
     return `${baseUrl}?refId=${address}`;
 }
 
