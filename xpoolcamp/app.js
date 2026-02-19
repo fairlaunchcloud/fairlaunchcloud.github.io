@@ -86,7 +86,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
 });
 
 const LINKSHORT = "xpoolcamp";
-const contractAddress = "0xF18ab6D26f6489381B09460e7554E9FC04ffDFBB";
+const contractAddress = "0x2eAA31D1f5D2B05dD9dCb64B06BED2274821fAf9";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0xF18ab6D26f6489381B09460e7554E9FC04ffDFBB";
+const DEFAULT_REFERRAL_ADDRESS = "0x2eAA31D1f5D2B05dD9dCb64B06BED2274821fAf9";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
