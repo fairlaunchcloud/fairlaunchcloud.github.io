@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'BitFriX (BTFX) Bond Offering Program',
-        description: 'CROWDPOOL DAO FOR BITFRIX FUND',
+        name: 'XPOOL STAKE OFFERING',
+        description: 'BITFRIX COMMUNITY PROGRAM',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/crowdpool/btfx.png']
+        icons: ['https://fairlaunch.vip/xpoolcamp/xpool.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "crowdpool";
+const LINKSHORT = "xpoolcamp";
 const contractAddress = "0xF18ab6D26f6489381B09460e7554E9FC04ffDFBB";
 
 const TOKEN_ADDRESSES = {
