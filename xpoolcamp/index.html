@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BITFRIX BOND OFFERING</title>
+  <link rel="icon" type="image/x-icon" href="./btfx.png">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container"><br><br><br>
+    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
+    <!-- <w3m-core-button></w3m-core-button> -->
+    <button id="open-modal">Connect Wallet</button>
+    <h3>BITFRIX (BTFX) BOND <br> FOR PROJECT OFFERING PROGRAM<br><a style="color: aqua;">| QUOTA OFFER = 21 UNIT @USDT 1000,- |<br><br>
+    <a href="https://www.pinksale.finance/pinklock/polygon/0xC5112195a19151Cf93570d6a400DA53aaf631626" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">"TRACK ONCHAIN YOUR BOND"</a></h3>
+    <div style="display:flex; justify-content: center; margin-bottom: 10px;">
+      <img src="dpool.png" style="width: 17%;" />
+      <img src="arrow-left.png" style="width: 15%;" />
+      <img src="cron.png" style="width: 17%;" />
+    </div>
+    <p><a href="https://linktr.ee/aurasupport/" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">⏩ Visit Link For AURA Core Support👉
+</a></p>
+    <h4><span style="color: lightgoldenrodyellow;">Fairlaunch Contract: <div id="contractFairlaunch"></div></span><h4>
+    <div id="referralLinkContainer" style="display: none;">
+        <p>Your Referral Link:</p>
+        <div class="referral-link-box">
+          <div id="referralLink"></div>
+          <button id="copyReferralLinkBtn">
+            <span class="copy-icon">COPY</span>
+         </button>
+        </div>
+      </div>
+    <div class="form">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" min="1000" max="1000" onblur="validateAmount()"/>
+
+      <label for="token">Token:</label>
+      <select id="token">
+        <option value="PAYTOKENA">USDT0</option>
+        <option value="PAYTOKENB">USDC</option>
+        <option value="PAYTOKENC">USDC.e</option>
+        <!-- <option value="PAYTOKENB">ZAP</option> -->
+        <!-- <option value="PAYTOKENC">FDUSD</option> -->
+        <!-- <option value="PAYTOKEND">BUSD</option> -->
+        <!-- <option value="PAYTOKENE">USDC</option> -->
+      </select>
+      <a href="https://polygonscan.com/address/0xf18ab6d26f6489381b09460e7554e9fc04ffdfbb#asset-tokens" style="color: gray; text-decoration: none;" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='gray'" style="font-size: 7px; ">** Last Quata Offering = 21 unit ⏩</a>
+      <input type="hidden" id="referral"/>
+
+      <button id="approveBtn">Approve Allowance</button>
+      <button id="contributeBtn">Contribute</button>
+
+      <p id="status"></p>
+    </div>
+  </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+ <script type="module" src="app.js"></script>
+ <script>
+   // Polyfill process for browser
+   window.process = {
+     env: {
+       NODE_ENV: 'production' // or 'production' if you're in production
+     }
+   };
+ </script>
+  <script>
+    function validateAmount() {
+    let amountInput = document.getElementById("amount");
+    let value = parseInt(amountInput.value);
+
+    if (value < 1000) {
+        amountInput.value = 1000;
+    } else if (value > 1000) {
+        amountInput.value = 1000;
+    }
+    }
+    </script>
+</body>
+</html>
