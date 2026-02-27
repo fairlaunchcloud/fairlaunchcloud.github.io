@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#d290f5',
+        '--w3m-accent': 'aqua',
     },
     features: {
         analytics: true,
@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'Fairlaunch Community Program',
-        description: 'Clabs Loyality Program For Our Community',
+        name: 'VIPool STAKE OFFERING',
+        description: 'BCORE COMMUNITY PROGRAM',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/ccs-vip/rfidc.png']
+        icons: ['https://fairlaunch.vip/vipool/VIPool.png']
     }
 });
 
@@ -85,13 +85,13 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "ccs-vip";
+const LINKSHORT = "vipool";
 const contractAddress = "0x5DE022b2C331F96e28a1c420869b16B03A6a4A22";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x9947d87c811e6033A1eEAFf3D25f6b4A94A8A1a7", // Contract ID token Payment (USDT)
-    PAYTOKENB: "0x...", // Alamat Token B
-    PAYTOKENC: "0x...", // Alamat Token C
+    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
+    PAYTOKENB: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // Contract ID token Payment (USDC)
+    PAYTOKENC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="rfidc.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="dpool.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
