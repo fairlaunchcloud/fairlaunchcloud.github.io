@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'XPOOL STAKE OFFERING',
-        description: 'BITFRIX COMMUNITY PROGRAM',
+        name: 'QUANTUM CORE SYSTEM',
+        description: 'TRADEFI CAMP BY QUANTUM INTITUTE',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/xpoolcamp/xpool.png']
+        icons: ['https://fairlaunch.vip/quin/xpool.png']
     }
 });
 
@@ -85,16 +85,16 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "xpoolcamp";
+const LINKSHORT = "quin";
 const contractAddress = "0x2eAA31D1f5D2B05dD9dCb64B06BED2274821fAf9";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
-    PAYTOKENB: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // Contract ID token Payment (USDC)
-    PAYTOKENC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", // Contract ID token Payment (USDC.e)
+    PAYTOKENA: "0x554cd6bdD03214b10AafA3e0D4D42De0C5D2937b", // Contract ID token Payment (USDT)
+    PAYTOKENB: "0x...", // Alamat Token B
+    PAYTOKENC: "0x...", // Alamat Token C
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
-    };
+};
 
 const DEFAULT_REFERRAL_ADDRESS = "0x2eAA31D1f5D2B05dD9dCb64B06BED2274821fAf9";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="xpool.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="dpool.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
