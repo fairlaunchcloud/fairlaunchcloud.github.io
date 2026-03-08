@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'QUANTUM CORE SYSTEM',
         description: 'TRADEFI CAMP BY QUANTUM INTITUTE',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/quin/xpool.png']
+        icons: ['https://fairlaunch.vip/quin/quin.png']
     }
 });
 
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="dpool.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="quin.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
