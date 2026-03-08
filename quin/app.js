@@ -86,7 +86,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
 });
 
 const LINKSHORT = "quin";
-const contractAddress = "0x2eAA31D1f5D2B05dD9dCb64B06BED2274821fAf9";
+const contractAddress = "0x4CE2750D36a81BC0f9AD0Dd2c6C093944d7A48ec";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0x554cd6bdD03214b10AafA3e0D4D42De0C5D2937b", // Contract ID token Payment (USDT)
@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
 };
 
-const DEFAULT_REFERRAL_ADDRESS = "0x2eAA31D1f5D2B05dD9dCb64B06BED2274821fAf9";
+const DEFAULT_REFERRAL_ADDRESS = "0x4CE2750D36a81BC0f9AD0Dd2c6C093944d7A48ec";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
