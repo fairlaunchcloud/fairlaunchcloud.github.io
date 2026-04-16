@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'BitFriX (BTFX) Bond Offering Program',
-        description: 'CROWDPOOL DAO FOR BITFRIX FUND',
+        name: 'BitFriX (BTFX) Collateral for DPOOL Project',
+        description: 'CROWDPOOL DAO (DPOOL) PROJECT OFFERING',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/crowdpool/btfx.png']
+        icons: ['https://fairlaunch.vip/crowdpool/dpool.png']
     }
 });
 
@@ -89,9 +89,9 @@ const LINKSHORT = "crowdpool";
 const contractAddress = "0xF18ab6D26f6489381B09460e7554E9FC04ffDFBB";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (USDT)
-    PAYTOKENB: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // Contract ID token Payment (USDC)
-    PAYTOKENC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174", // Contract ID token Payment (USDC.e)
+    PAYTOKENA: "0x19A16622368cB9E63D6E919ee6C33e42930D563a", // Contract ID token Payment (BTFX)
+    PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
+    PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };
