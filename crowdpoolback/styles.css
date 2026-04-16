@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   top: 1% !important;
-  background-image: url('https://media.giphy.com/media/4C6SPngBNL6gtBgSRQ/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-image: url('https://media.giphy.com/media/4o1RLkZ1zo0LlgFARs/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -141,14 +141,14 @@ body {
   
   .copy-icon {
     font-size: 16px;
-    background: aqua;
+    background: black;
     border-radius: 10px;
     padding: 10px;
   }
   
   .copy-icon:hover {
-    color: #67686b;
-    background: #ffea44;
+    color: darkcyan;
+    background: khaki;
   }
 
   #contributeBtn {
