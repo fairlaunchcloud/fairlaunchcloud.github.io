@@ -14,7 +14,7 @@
     <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
     <!-- <w3m-core-button></w3m-core-button> -->
     <button id="open-modal">Connect Wallet</button>
-    <h3>FIX POOL (XPOOL) <br> FOR COMMUNITY DEVELOPMENT<br><a style="color: aquamarine;">| Min Contribute NOW = USDT 250.00 |</h3>
+    <h3>FIX POOL (XPOOL) <br> FOR COMMUNITY DEVELOPMENT<br><a style="color: aquamarine;">| Min Contribute NOW = USDT 500.00 |</h3>
     <div style="display:flex; justify-content: center; margin-bottom: 10px;">
       <img src="xpool.png" style="width: 17%;" />
       <img src="arrow-left.png" style="width: 15%;" />
@@ -22,7 +22,7 @@
     </div>
     <p><a href="" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='whitesmoke'" onmouseout="this.style.color='yellow'">⏩Contribution Update Schedule :⏩
 </a></p>
-<p><a href="" style="color: aquamarine; text-decoration: none;" onmouseover="this.style.color='whitesmoke'" onmouseout="this.style.color='aquamarine'"> 👉 20 April 2026 = USD 500,- *
+<p><a href="" style="color: aquamarine; text-decoration: none;" onmouseover="this.style.color='whitesmoke'" onmouseout="this.style.color='aquamarine'"> 👉 01 Mei 2026 = USD 1000,- *
 </a></p>
     <h4><span style="color: lightgoldenrodyellow;">Fairlaunch Contract: <div id="contractFairlaunch"></div></span><h4>
     <div id="referralLinkContainer" style="display: none;">
@@ -36,7 +36,7 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="250" max="1000" onblur="validateAmount()"/>
+      <input type="number" id="amount" placeholder="Enter amount" min="500" max="1000" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
@@ -72,8 +72,8 @@
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 250) {
-        amountInput.value = 250;
+    if (value < 500) {
+        amountInput.value = 500;
     } else if (value > 1000) {
         amountInput.value = 1000;
     }
