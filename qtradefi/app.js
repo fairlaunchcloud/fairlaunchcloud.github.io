@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'QUANTUM CORE SYSTEM',
         description: 'TRADEFI CAMP BY QUANTUM INTITUTE',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/quin/quin.png']
+        icons: ['https://fairlaunch.vip/qtradefi/quin.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "quin";
+const LINKSHORT = "qtradefi";
 const contractAddress = "0x4CE2750D36a81BC0f9AD0Dd2c6C093944d7A48ec";
 
 const TOKEN_ADDRESSES = {
