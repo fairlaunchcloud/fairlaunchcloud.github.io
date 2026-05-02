@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>RWA Burn For FGOLD</title>
+  <link rel="icon" type="image/x-icon" href="./zap.png">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container"><br><br><br>
+    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
+    <!-- <w3m-core-button></w3m-core-button> -->
+    <button id="open-modal">Connect Wallet</button>
+    <h3>GOLD REAL WORLD ASSET (RWA)</h3>
+    <div style="display:flex; justify-content: center; margin-bottom: 18px;">
+      <img src="zap.png" style="width: 18%;" />
+      <img src="redeem.png" style="width: 17%;" />
+      <img src="gidr.png" style="width: 18%;" />
+    </div>
+    <span>RWA Burn For Zeltsphy (ZAP):<br> | Fee Burn:10% |<br><br>
+    <span><br><a style="color: whitesmoke;">TOKEN RATIO TO GET GIDR:<br>( 1 ZAP / GIDR )</a><br><br>
+    <span>Contract Address :<br><div id="contractFairlaunch"></div></span>
+    <div id="referralLinkContainer" style="display: none;">
+        <p>Your Referral Link:</p>
+        <div class="referral-link-box">
+          <div id="referralLink"></div>
+          <button id="copyReferralLinkBtn">
+            <span class="copy-icon">COPY</span>
+          </button>
+        </div>
+      </div>
+    <div class="form">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" min="0.1" max="1" onblur="validateAmount()"/>
+
+      <label for="token">Token:</label>
+      <select id="token">
+        <option value="PAYTOKENA">ZAP</option>
+        <!-- <option value="PAYTOKENB">DAI</option>
+        <option value="PAYTOKENA">FGOLD</option>
+        <option value="PAYTOKENB">ZAP</option>
+        <option value="PAYTOKENC">FDUSD</option>
+        <option value="PAYTOKEND">BUSD</option>
+        <option value="PAYTOKENE">USDC</option> -->
+      </select>
+      <a href="https://api.whatsapp.com/send?phone=+6282221440997&text=Halo%20ZELTSHY%20(ZAP}%20B2B%20PARTNER%20for%20Support%20FREEDOM%20REVOLUTION%20Camp%20of%20Indonesia%20Community.%20Saya%20ingin%20Meredeem%20FGOLD%20untuk%20di%20alokasikan%20Supply%20Token%20ZELTSHY%20(ZAP}.%20Mohon%20Bantuannya%20Untuk%20bisa%20diarahkan%20lebih%20lanjut.%20" style="color: gray; text-decoration: none;" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='gray'" style="font-size: 7px; ">** Claim ZAP From FGOLD Own ⏩</a></h3>
+      <input type="hidden" id="referral"/>
+
+      <button id="approveBtn">Approve Allowance</button>
+      <button id="contributeBtn">Contribute</button>
+
+      <p id="status"></p>
+    </div>
+  </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+ <script type="module" src="app.js"></script>
+ <script>
+   // Polyfill process for browser
+   window.process = {
+     env: {
+       NODE_ENV: 'production' // or 'production' if you're in production
+     }
+   };
+ </script>
+  <script>
+    function validateAmount() {
+    let amountInput = document.getElementById("amount");
+    let value = parseInt(amountInput.value);
+
+    if (value < 0.1) {
+        amountInput.value = 0.1;
+    } else if (value > 1) {
+        amountInput.value = 1;
+    }
+    }
+    </script>
+</body>
+</html>
