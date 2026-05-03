@@ -46,9 +46,9 @@ const modal = createAppKit({
       ],
     metadata: {
         name: 'Fairlaunch For Community Suppoert',
-        description: 'Community Support For Gold RWA Burning',
+        description: 'Community Support For GIDR P2P BY CLABS',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/getgold/zap.png']
+        icons: ['https://fairlaunch.vip/gettring/BRING.png']
     }
 });
 
@@ -85,18 +85,18 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "getgold";
-const contractAddress = "0x68B356c5C165484Fb1EA2ca7418E00acc19E8B79";
+const LINKSHORT = "gettring";
+const contractAddress = "0xe386fBED2522d1cb1F0A13dE39bfa681706d458F";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x6b7682a9fdA1d482A3779C9489DC62437BB58945", // Contract ID token Payment (FGOLD)
+    PAYTOKENA: "0x0a40ff165736f5989e9F40fFbEd24A640c760754", // Contract ID token Payment (GIDR)
     PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
     PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0x68B356c5C165484Fb1EA2ca7418E00acc19E8B79";
+const DEFAULT_REFERRAL_ADDRESS = "0xe386fBED2522d1cb1F0A13dE39bfa681706d458F";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
