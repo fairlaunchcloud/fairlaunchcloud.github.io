@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'BitFriX (BTFX) Collateral for DPOOL Project',
-        description: 'CROWDPOOL DAO (DPOOL) PROJECT OFFERING',
+        name: 'CrowdPool DAO (DPOOL) Collateral for DSHARE Project ',
+        description: 'CROWDSHARE DAO (DSHARE) PROJECT OFFERING',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/crowdpool/dpool.png']
+        icons: ['https://fairlaunch.vip/crowdshare/dshare.png']
     }
 });
 
@@ -85,11 +85,11 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "crowdpool";
-const contractAddress = "0xF18ab6D26f6489381B09460e7554E9FC04ffDFBB";
+const LINKSHORT = "crowdshare";
+const contractAddress = "0xbFD07f12Ca2B331D9B756211f4e939D25E627D4a";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x19A16622368cB9E63D6E919ee6C33e42930D563a", // Contract ID token Payment (BTFX)
+    PAYTOKENA: "0xc718e7fbaE39Ab1ff94BF9cE12F88C9B5254EfE5", // Contract ID token Payment (DPOOL)
     PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
     PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
