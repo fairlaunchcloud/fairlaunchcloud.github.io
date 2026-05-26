@@ -72,8 +72,8 @@ body {
   
   button {
     padding: 10px;
-    background-color: black;
-    color: khaki;
+    background-color: navy;
+    color: whitesmoke;
     border: none;
     border-radius: 7px;
     font-size: 20px;
@@ -84,7 +84,7 @@ body {
   
   button:hover {
     background-color: #e7f8ff;
-    color: darkcyan;
+    color: navy;
   }
   
   button:disabled {
@@ -141,13 +141,13 @@ body {
   
   .copy-icon {
     font-size: 16px;
-    background: black;
+    background: navy;
     border-radius: 10px;
     padding: 10px;
   }
   
   .copy-icon:hover {
-    color: darkcyan;
+    color: navy;
     background: khaki;
   }
 
