@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'BitFriX (BTFX) Collateral Return via DPOOL ',
-        description: 'CROWDPOOL DAO (DPOOL) FOR COLLATERAL RETURN',
+        name: 'CROWDPOOL DAO (DPOOL) COLLATERAL RETURN',
+        description: 'CrowdPool DAO (DPOOL) Collateral Return by DSHARE PROJECT',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/dpoolback/dpool.png']
+        icons: ['https://fairlaunch.vip/dshareback/dshare.png']
     }
 });
 
@@ -85,18 +85,18 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "crowdpoolback";
-const contractAddress = "0x419ec278368f6ef42c51ada1abd5de7f9fb162f5";
+const LINKSHORT = "dshareback";
+const contractAddress = "0x232233a8b42C3850C8Dd712E1664082Dd878A3Ff";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xc718e7fbaE39Ab1ff94BF9cE12F88C9B5254EfE5", // Contract ID token Payment (DPOOL)
+    PAYTOKENA: "0x307d68e976FA7E9d6C14119f8989D382FDe028c7", // Contract ID token Payment (DPOOL)
     PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
     PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0xc718e7fbaE39Ab1ff94BF9cE12F88C9B5254EfE5";
+const DEFAULT_REFERRAL_ADDRESS = "0x8d037566CfBd4dF49a6416E3367d45dd823B0AB0";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {

@@ -45,8 +45,8 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'BitFriX (BTFX) Collateral Return via DPOOL ',
-        description: 'CROWDPOOL DAO (DPOOL) FOR COLLATERAL RETURN',
+        name: 'BITFRIX (BTFX) COLLATERAL RETURN',
+        description: 'BitFrix (BTFX) Collateral Return by DPOOL PROJECT',
         url: window.location.href,
         icons: ['https://fairlaunch.vip/dpoolback/dpool.png']
     }
@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0xc718e7fbaE39Ab1ff94BF9cE12F88C9B5254EfE5";
+const DEFAULT_REFERRAL_ADDRESS = "0x8d037566CfBd4dF49a6416E3367d45dd823B0AB0";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
