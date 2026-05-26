@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'Fairlaunch For Community Suppoert',
         description: 'Community Support For GIDR P2P BY CLABS',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/gettring/BRING.png']
+        icons: ['https://fairlaunch.vip/tringme/BRING.png']
     }
 });
 
@@ -85,7 +85,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "gettring";
+const LINKSHORT = "tringme";
 const contractAddress = "0xe386fBED2522d1cb1F0A13dE39bfa681706d458F";
 
 const TOKEN_ADDRESSES = {
