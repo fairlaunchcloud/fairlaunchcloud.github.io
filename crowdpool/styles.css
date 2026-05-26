@@ -147,8 +147,8 @@ body {
   }
   
   .copy-icon:hover {
-    color: #67686b;
-    background: #ffea44;
+    color: gold;
+    background: lightslategray;
   }
 
   #contributeBtn {
