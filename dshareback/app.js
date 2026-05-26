@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'BitFriX (BTFX) Collateral Return via DPOOL ',
         description: 'CROWDPOOL DAO (DPOOL) FOR COLLATERAL RETURN',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/crowdpoolback/dpool.png']
+        icons: ['https://fairlaunch.vip/dpoolback/dpool.png']
     }
 });
 
