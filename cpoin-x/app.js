@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': 'lime',
+        '--w3m-accent': 'aqua',
     },
     features: {
         analytics: true,
@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'CLABS Coffee For Blockchain Community',
         description: 'Lets Learn Defi From Coffee Camp',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/cpoinx/coin-x.png']
+        icons: ['https://fairlaunch.vip/cpoinx/cpoin-x.png']
     }
 });
 

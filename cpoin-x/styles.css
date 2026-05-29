@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 105vh;
   margin: 0;
 }
 
@@ -35,7 +35,7 @@ body {
   padding: 20px;
   border-radius: 18px;
   box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
-  max-width: 400px;
+  max-width: 425px;
   width: 100%;
   text-align: center;
     color: yellow;
@@ -62,7 +62,7 @@ body {
   }
   
   input, select {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #154579;
     border-radius: 7px;
     font-size: 20px;
@@ -235,7 +235,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 140vh;
     margin: 0;
   }
 
@@ -300,7 +300,7 @@ body {
   }
 
   #referralLink {
-    font-size: 12px; /* Ukuran font lebih kecil untuk link referral */
+    font-size: 11px; /* Ukuran font lebih kecil untuk link referral */
   }
 
   .copy-icon {
