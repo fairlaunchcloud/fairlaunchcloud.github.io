@@ -163,13 +163,13 @@ body {
 /* Tambahkan media query untuk layar dengan lebar maksimum 600px (ukuran mobile) */
 @media only screen and (max-width: 600px) {
   body {
-    padding: 10px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
+    padding: 8px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
   }
 
   .container {
     padding: 15px; /* Kurangi padding pada container */
     max-width: 100%; /* Lebar container mengikuti lebar layar */
-    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
+    border-radius: 10; /* Hilangkan border-radius untuk tampilan full-width */
     box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
   }
 
@@ -235,7 +235,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 140vh;
+    height: 130vh;
     margin: 0;
   }
 
