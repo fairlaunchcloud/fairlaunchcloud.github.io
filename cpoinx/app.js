@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': '#fffb00',
+        '--w3m-accent': 'lime',
     },
     features: {
         analytics: true,
@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'Fairlaunch Community Program',
-        description: 'Private Pool Stake For Our Community',
+        name: 'CLABS Coffee For Blockchain Community',
+        description: 'Lets Learn Defi From Coffee Camp',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/ccs-diamond/rfidx.png']
+        icons: ['https://fairlaunch.vip/cpoinx/coin-x.png']
     }
 });
 
@@ -85,18 +85,18 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "ccs-diamond";
+const LINKSHORT = "cpoinx";
 const contractAddress = "0xE1806d9ba977E1AF51d6355052E974e402Feac1f";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x8439cc930D330427D8A4BBABC335F5927A52fa87", // Contract ID token Payment (USDT)
-    PAYTOKENB: "0x...", // Alamat Token B
-    PAYTOKENC: "0x...", // Alamat Token C
+    PAYTOKENA: "0x37aDC8f969b63B8bBD025D10D03900C5cd9DD367", // Contract ID token Payment (FGOLD)
+    PAYTOKENB: "0x649a2DA7B28E0D54c13D5eFf95d3A660652742cC", // Contract ID token Payment (USDC)
+    PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0xE1806d9ba977E1AF51d6355052E974e402Feac1f";
+const DEFAULT_REFERRAL_ADDRESS = "0x6926384AFc68038404980A0E581769D86AF55359";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="rfidx.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="cpoin-x.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
