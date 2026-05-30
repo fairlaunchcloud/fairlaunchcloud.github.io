@@ -48,7 +48,7 @@ const modal = createAppKit({
         name: 'CLABS Coffee For Blockchain Community',
         description: 'Lets Learn Defi From Coffee Camp',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/cpoin-x/cpoin-x.png']
+        icons: ['https://fairlaunch.vip/cpoin-xclabs/cpoin-x.png']
     }
 });
 
@@ -85,12 +85,12 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "cpoin-x";
-const contractAddress = "0xE1806d9ba977E1AF51d6355052E974e402Feac1f";
+const LINKSHORT = "cpoin-xclabs";
+const contractAddress = "0xe6BDF5A766637Acc272319bA3804942594505907";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x37aDC8f969b63B8bBD025D10D03900C5cd9DD367", // Contract ID token Payment (FGOLD)
-    PAYTOKENB: "0x649a2DA7B28E0D54c13D5eFf95d3A660652742cC", // Contract ID token Payment (USDC)
+    PAYTOKENA: "0xE7A3eEDDd6c4F339D4219aFBAE5605CA3DF9DDD1", // Contract ID token Payment (FGOLD)
+    PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
     PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
     PAYTOKENE: "0x...", // Alamat Token E
