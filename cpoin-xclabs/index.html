@@ -17,12 +17,12 @@
     <h3> ✅Lets Learn DEFI From Coffee Camp✅<br>
       <h4>CLABS COFFEE FOR BLOCKCHAIN COMMUNITY</h4>
     <div style="display:flex; justify-content: center; margin-bottom: 18px;">
-      <img src="cpoin.png" style="width: 18%;" />
-      <img src="redeem.png" style="width: 15%;" />
-      <img src="cpoin-x.png" style="width: 20%;" /></div>
+      <img src="cpoin-x.png" style="width: 18%;" />
+      <img src="redeem.png" style="width: 12%;" />
+      <img src="xpool.png" style="width: 18%;" /></div>
     
-    <span><br><a style="color: snow;">CLABS COFFEE MEMBERSHIP:<br>| START BALANCE = 100 CPOIN-X |<br>
-    <span><br><a style="color: greenyellow;">CPOIN-X RATIO FROM CPOIN :<br>( 1 CPOIN-X = 1000 CPOIN )</a><br><br>
+    <span><br><a style="color: snow;">CLABS COFFEE FOR XCV :<br>| Price Offer : 01 June 2026 - 31 Jun 2026 |<br>
+    <span><br><a style="color: aqua;">XPOOL RATIO FROM CPOIN-X :<br>( 1 XPOOL = 25 CPOIN-X )</a><br><br>
     <span>Contract Address :<br><div id="contractFairlaunch"></div></span>
     <div id="referralLinkContainer" style="display: none;">
         <p>Your Referral Link:</p>
@@ -35,7 +35,7 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="1" max="25000" onblur="validateAmount()"/>
+      <input type="number" id="amount" placeholder="Enter amount" min="25" max="25000" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
@@ -48,7 +48,7 @@
         <option value="PAYTOKENE">USDC</option> -->
       </select>
       <h3><a href="https://fairlaunch.vip/qclabs/" style="color: whitesmoke; text-decoration: none;" onmouseover="this.style.color='aqua'" onmouseout="this.style.color='whitesmoke'" style="font-size: 1px; ">** CLABS Core Academy (CCA) ⏩</a><br>
-      <a href="" style="color: whitesmoke; text-decoration: none;" onmouseover="this.style.color='aqua'" onmouseout="this.style.color='whitesmoke'" style="font-size: 1px; ">** CPOIN-X DEFI Program ⏩</a></h3>
+      <a href="https://fairlaunch.vip/cpoin-x/" style="color: whitesmoke; text-decoration: none;" onmouseover="this.style.color='aqua'" onmouseout="this.style.color='whitesmoke'" style="font-size: 1px; ">** Get CPOIN-X by CPOIN ⏩</a></h3>
       <input type="hidden" id="referral"/>
 
       <button id="approveBtn">Approve Allowance</button>
@@ -72,8 +72,8 @@
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 1) {
-        amountInput.value = 1;
+    if (value < 25) {
+        amountInput.value = 25;
     } else if (value > 25000) {
         amountInput.value = 25000;
     }
