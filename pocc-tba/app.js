@@ -44,10 +44,10 @@ const modal = createAppKit({
         '15c8b91ade1a4e58f3ce4e7a0dd7f42b47db0c8df7e0d84f63eb39bcb96c4e0f'
       ],
     metadata: {
-        name: 'CMiner Pool For Blockchain Community ',
-        description: 'CMiner For Blockchain Pool Staking',
+        name: 'PROOF OF COMMUNITY CONCENCUS (POCC)',
+        description: 'TBA OFFER WITH CLK CONVERSION',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/CMiner/cmr.png']
+        icons: ['https://fairlaunch.vip/pocc-tba/tba.png']
     }
 });
 
