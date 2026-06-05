@@ -163,6 +163,8 @@ body {
 /* Tambahkan media query untuk layar dengan lebar maksimum 600px (ukuran mobile) */
 @media only screen and (max-width: 600px) {
   body {
+    height: 107vh;
+    margin: 0;
     padding: 10px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
   }
 
