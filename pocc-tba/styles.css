@@ -163,16 +163,53 @@ body {
 /* Tambahkan media query untuk layar dengan lebar maksimum 600px (ukuran mobile) */
 @media only screen and (max-width: 600px) {
   body {
+    background: linear-gradient(5deg, #3fc3ee, #001434);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    top: 1% !important;
+    background:transparent;
+  
+    background-image: url('https://media.giphy.com/media/7NS9RAepPQ0HJ85qJz/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animateBackground 60s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 107vh;
     margin: 0;
-    padding: 10px; /* Tambahkan padding agar konten tidak terlalu menempel di tepi layar */
   }
 
   .container {
-    padding: 15px; /* Kurangi padding pada container */
-    max-width: 100%; /* Lebar container mengikuti lebar layar */
-    border-radius: 0; /* Hilangkan border-radius untuk tampilan full-width */
-    box-shadow: none; /* Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+    /* padding: 25px; Padding lebih kecil untuk container */
+    /* max-width: 100%; Lebar container mengikuti lebar layar */
+    /* border-radius: 30px; Hilangkan border-radius untuk tampilan full-width */
+    /* box-shadow: 0px 0px 12px rgb(255 255 255 / 90%); Hilangkan box-shadow untuk tampilan yang lebih sederhana */
+    background: linear-gradient(5deg, #3fc3ee, #001434);
+    background:transparent;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    top: 1% !important;
+    
+  
+    background-image: url('https://media.giphy.com/media/xTiTnkx42MemFHyCPe/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animateBackground 60s linear infinite;
+    display: flow-root;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px rgb(255 255 255 / 90%);
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    color: #faffd9;
   }
 
   h1 {
