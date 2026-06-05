@@ -84,7 +84,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "CMiner";
+const LINKSHORT = "pocc-tba";
 const contractAddress = "0x53800AfC05C53D7AF092109e0188398eA8e493F5";
 
 const TOKEN_ADDRESSES = {
@@ -119,7 +119,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="cmr.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="tba.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
