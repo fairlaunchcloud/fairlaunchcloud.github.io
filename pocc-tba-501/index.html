@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Fairlaunch For Our Community</title>
+  <link rel="icon" type="image/x-icon" href="./tba.png">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container"><br><br><br>
+    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
+    <!-- <w3m-core-button></w3m-core-button> -->
+    <button id="open-modal">Connect Wallet</button>
+    <h4><a style="color: whitesmoke;">PROOF OF COMMUNITY CONCENCUS (POCC)<br>" TBA OFFER WITH CLK CONVERSION "</a><br><br><a style="color: yellow;">| Conversion Rate: 1 TBA = 10 CLK |</a><br>
+    <a href="" style="color: whitesmoke; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">" Get Airdrop CMR by Affiliate Program "</a></h3>
+    <div style="display:flex; justify-content: center; margin-bottom: 10px;">
+      <img src="clk.png" style="width: 17%;" />
+      <img src="arrow-left.png" style="width: 15%;" />
+      <img src="tba.png" style="width: 18%;" />
+    </div>
+    <p><a href="https://birdeye.so/polygon/token/0x1EdC86d411AD224f97b6Ad89C4446683C1b0BAaE" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">⏩ Coinluck (CLK) DexMarket👉
+</a></p>
+    <span>Contract ID : <div id="contractFairlaunch"></div></span>
+    <div id="referralLinkContainer" style="display: none;">
+        <p>Your Referral Link:</p>
+        <div class="referral-link-box">
+          <div id="referralLink"></div>
+          <button id="copyReferralLinkBtn">
+            <span class="copy-icon">COPY</span>
+          </button>
+        </div>
+      </div>
+    <div class="form">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" min="100" max="250000" onblur="validateAmount()"/>
+
+      <label for="token">Token:</label>
+      <select id="token">
+        <option value="PAYTOKENA">CLK</option>
+        <!-- <option value="PAYTOKENB">DAI</option>
+        <option value="PAYTOKENC">FDUSD</option>
+        <option value="PAYTOKEND">BUSD</option>
+        <option value="PAYTOKENE">USDC</option> -->
+      </select>
+      <a href="https://plaxswap.io/pools" style="color: silver; text-decoration: none;" onmouseover="this.style.color='khaki'" onmouseout="this.style.color='silver'" style="font-size: 7px; ">** Stake Your Thuba (TBA) Now ⏩</a></h3>
+      <input type="hidden" id="referral"/>
+
+      <button id="approveBtn">Approve Allowance</button>
+      <button id="contributeBtn">Buy TBA</button>
+
+      <p id="status"></p>
+    </div>
+  </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+ <script type="module" src="app.js"></script>
+ <script>
+   // Polyfill process for browser
+   window.process = {
+     env: {
+       NODE_ENV: 'production' // or 'production' if you're in production
+     }
+   };
+ </script>
+  <script>
+    function validateAmount() {
+    let amountInput = document.getElementById("amount");
+    let value = parseInt(amountInput.value);
+
+    if (value < 100) {
+        amountInput.value = 100;
+    } else if (value > 250000) {
+        amountInput.value = 250000;
+    }
+    }
+    </script>
+</body>
+</html>
