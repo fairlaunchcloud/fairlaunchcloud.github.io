@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FairLaunch Will be Back</title>
-    <link rel="icon" type="image/x-icon" href="./images/xpool.png">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <img src="images/new-test.png" alt="logo" class="logo" width="200%" />
-
-      <div class="content">
-        <p style="font-size:24px; ">How to Get Various Assets in the Defi World !</p><br>
-        
-        <h1><a style="color: crimson">P2P </a><span>XPOOL Community Value </span> <a style="color: whitesmoke">is Coming !!</a></h1><br><br><br>
-        
-        <div class="launch-time">
-          <div>
-            <p id="days">00</p>
-            <span>Days</span>
-          </div>
-          <div>
-            <p id="hours">00</p>
-            <span>Hours</span>
-          </div>
-          <div>
-            <p id="minutes">00</p>
-            <span>Minutes</span>
-          </div>
-          <div>
-            <p id="seconds">00</p>
-            <span>Seconds</span>
-          </div>
-        </div><br><br>
-        <button type="button">
-          Visit Link New Program For Our Community <a href="https://fairlaunch.vip/pocc-tba/?refId=0x0bD0Db79f93279Fc64265e2A70a9deF96087f0b5"> <img src="images/triangle.png" alt="triangle" />
-        </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>XPOOL COMMUNITY DEVELOPMENT</title>
+  <link rel="icon" type="image/x-icon" href="./xpool.png">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container"><br><br><br><br><br>
+    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
+    <!-- <w3m-core-button></w3m-core-button> -->
+    <button id="open-modal">Connect Wallet</button>
+    <h3>XPOOL COMMUNITY PROGRAM <br><a style="color: yellow;">| XCV PRICE : 1 XPOOL = 1.25 USDT |<br>
+      <p><a style="color: aquamarine;">( XCV VALID UNTIL 31 JULI 2026 )</p>
+    <div style="display:flex; justify-content: center; margin-bottom: 10px;">
+      <img src="xpool.png" style="width: 17%;" />
+      <img src="arrow-left.png" style="width: 15%;" />
+      <img src="btfx.png" style="width: 17%;" />
+    </div></h3>
+    <p><a href="https://dex.coinmarketcap.com/token/polygon/0x19A16622368cB9E63D6E919ee6C33e42930D563a/" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">⏩ BitFrix (BTFX) DexMarket👉
+</a></p>
+    <h4><span style="color: lightgoldenrodyellow;">Fairlaunch Contract: <div id="contractFairlaunch"></div></span><h4>
+    <div id="referralLinkContainer" style="display: none;">
+        <p>Your Referral Link:</p>
+        <div class="referral-link-box">
+          <div id="referralLink"></div>
+          <button id="copyReferralLinkBtn">
+            <span class="copy-icon">COPY</span>
+         </button>
+        </div>
       </div>
-      <img src="images/img.png" class="rocket" alt="rocket" width="100%">
+    <div class="form">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" min="5" max="800" onblur="validateAmount()"/>
+
+      <label for="token">Token:</label>
+      <select id="token">
+        <option value="PAYTOKENA">USDT0</option>
+        <!-- <option value="PAYTOKENB">USDC</option> -->
+        <!-- <option value="PAYTOKENC">USDC.e</option> -->
+        <!-- <option value="PAYTOKENB">ZAP</option> -->
+        <!-- <option value="PAYTOKENC">FDUSD</option> -->
+        <!-- <option value="PAYTOKEND">BUSD</option> -->
+        <!-- <option value="PAYTOKENE">USDC</option> -->
+      </select>
+      <h3><a href="https://fairlaunch.vip/qclabs/" style="color: whitesmoke; text-decoration: none;" onmouseover="this.style.color='aqua'" onmouseout="this.style.color='whitesmoke'" style="font-size: 1px; ">** CLABS Core Academy (CCA) ⏩</a><br><br>
+      <a href="https://plaxswap.io/pools/" style="color: whitesmoke; text-decoration: none;" onmouseover="this.style.color='aqua'" onmouseout="this.style.color='whitesmoke'" style="font-size: 1px; ">** X-POOL DEFI PROGRAM ⏩</a></h3>
+      <input type="hidden" id="referral"/>
+
+      <button id="approveBtn">Approve Allowance</button>
+      <button id="contributeBtn">Contribute</button>
+
+      <p id="status"></p>
     </div>
-    <script src="main.js"></script>
-  </body>
+  </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+ <script type="module" src="app.js"></script>
+ <script>
+   // Polyfill process for browser
+   window.process = {
+     env: {
+       NODE_ENV: 'production' // or 'production' if you're in production
+     }
+   };
+ </script>
+  <script>
+    function validateAmount() {
+    let amountInput = document.getElementById("amount");
+    let value = parseInt(amountInput.value);
+
+    if (value < 5) {
+        amountInput.value = 5;
+    } else if (value > 800) {
+        amountInput.value = 800;
+    }
+    }
+    </script>
+</body>
 </html>
