@@ -1,83 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>QUANTUM CORE SYSTEM (QCOS)</title>
-  <link rel="icon" type="image/x-icon" href="./quin.png">
-  <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
-<body>
-  <div class="container"><br><br><br>
-    <!-- <button id="connectWalletBtn">Connect Wallet</button> -->
-    <!-- <w3m-core-button></w3m-core-button> -->
-    <button id="open-modal">Connect Wallet</button>
-    <h3>QUANTUM CORE SYSTEM ( QCOS )<br>FOR CLABS DEFI COMMUNITY</h3>
-      <div style="display:flex; justify-content: center; margin-bottom: 10px;">
-      <img src="quin.png" style="width: 14%;" />
-    </div></h3><a style="color: whitesmoke;">Present By : Clabs Core Academy (CCA)<br><br>
-    <div style="display:flex; justify-content: center; margin-bottom: 10px;">
-      <img src="xpool.png" style="width: 12%;" />
-      <img src="arrow1.png" style="width: 10%;" />
-      <img src="arrow2.png" style="width: 10%;" />
-      <img src="logo.png" style="width: 12%;" />
-    </div></h3>
-    <p><a href="https://dex.coinmarketcap.com/token/polygon/0x19A16622368cB9E63D6E919ee6C33e42930D563a/" style="color: yellow; text-decoration: none;" onmouseover="this.style.color='lightgoldenrodyellow'" onmouseout="this.style.color='yellow'">⏩ BitFrix (BTFX) DexMarket👉
-</a></p>
-    <h4><span style="color: aquamarine;">Quantum Core System (QCOS) Contract:</span><span style="color: whitesmoke;"><div id="contractFairlaunch"></div></span><h4>
-    <div id="referralLinkContainer" style="display: none;">
-        <p>Your Referral Link:</p>
-        <div class="referral-link-box">
-          <div id="referralLink"></div>
-          <button id="copyReferralLinkBtn">
-            <span class="copy-icon">COPY</span>
-         </button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FairLaunch Will be Back</title>
+    <link rel="icon" type="image/x-icon" href="./images/xpool.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/new-test.png" alt="logo" class="logo" width="200%" />
+
+      <div class="content">
+        <p style="font-size:24px; ">How to Get Various Assets in the Defi World !</p><br>
+        
+        <h1><a style="color: crimson">FairLaunch</a><span> by P2P Community Program </span> <a style="color: whitesmoke">Will be Back Soon ..</a></h1><br><br><br>
+        
+        <div class="launch-time">
+          <div>
+            <p id="days">00</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours">00</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="minutes">00</p>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <p id="seconds">00</p>
+            <span>Seconds</span>
+          </div>
+        </div><br><br>
+        <button type="button">
+          Visit Link Our Stake Pool in Plaxswap DEX <a href="https://plaxswap.io/pools"> <img src="images/triangle.png" alt="triangle" />
+        </button>
       </div>
-    <div class="form">
-      <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="1250000" max="1250000" onblur="validateAmount()"/>
-
-      <label for="token">Token:</label>
-      <select id="token">
-        <option value="PAYTOKENA">IDRT</option>
-        <!-- <option value="PAYTOKENB">DAI</option>
-        <option value="PAYTOKENC">FDUSD</option>
-        <option value="PAYTOKEND">BUSD</option>
-        <option value="PAYTOKENE">USDC</option> -->
-      </select>
-      <a href="https://fairlaunch.vip/qtradefi" style="color: lightgreen; text-decoration: none;" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='aquamarine'" style="font-size: 7px; ">** Join To TradeFI BootCamp ⏩</a>
-      <input type="hidden" id="referral"/>
-
-      <button id="approveBtn">Approve Allowance</button>
-      <button id="contributeBtn">Contribute</button>
-
-      <p id="status"></p>
+      <img src="images/img.png" class="rocket" alt="rocket" width="100%">
     </div>
-  </div>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
- <script type="module" src="app.js"></script>
- <script>
-   // Polyfill process for browser
-   window.process = {
-     env: {
-       NODE_ENV: 'production' // or 'production' if you're in production
-     }
-   };
- </script>
-  <script>
-    function validateAmount() {
-    let amountInput = document.getElementById("amount");
-    let value = parseInt(amountInput.value);
-
-    if (value < 1250000) {
-        amountInput.value = 1250000;
-    } else if (value > 1250000) {
-        amountInput.value = 1250000;
-    }
-    }
-    </script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
