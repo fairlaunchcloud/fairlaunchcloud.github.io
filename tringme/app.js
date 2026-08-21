@@ -46,7 +46,7 @@ const modal = createAppKit({
       ],
     metadata: {
         name: 'Fairlaunch For Community Suppoert',
-        description: 'Community Support For GIDR P2P BY CLABS',
+        description: 'Community Support For GOIDR P2P BY CLABS',
         url: window.location.href,
         icons: ['https://fairlaunch.vip/tringme/BRING.png']
     }
@@ -89,7 +89,7 @@ const LINKSHORT = "tringme";
 const contractAddress = "0xe386fBED2522d1cb1F0A13dE39bfa681706d458F";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x0a40ff165736f5989e9F40fFbEd24A640c760754", // Contract ID token Payment (GIDR)
+    PAYTOKENA: "0x0a40ff165736f5989e9F40fFbEd24A640c760754", // Contract ID token Payment (GOIDR)
     PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
     PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
