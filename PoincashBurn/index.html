@@ -32,7 +32,7 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="10" max="1000" onblur="validateAmount()"/>
+      <input type="number" id="amount" placeholder="Enter amount" min="100" max="1000" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
@@ -44,7 +44,7 @@
         <option value="PAYTOKEND">BUSD</option>
         <option value="PAYTOKENE">USDC</option> -->
       </select>
-      <a href="https://fairlaunch.vip/PoincashBurn/" style="color: gray; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='gray'" style="font-size: 7px; ">** Redeem PoinCash (POS) ⏩</a></h3>
+      <a href="https://plaxswap.io/pools" style="color: gray; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='gray'" style="font-size: 7px; ">** Get PoinCash (POS) By PlaxSwap ⏩</a></h3>
       <a href="https://fairlaunch.vip/buybackPOIN/" style="color: gray; text-decoration: none;" onmouseover="this.style.color='gold'" onmouseout="this.style.color='gray'" style="font-size: 7px; ">** Poinchain (POIN) BuyBack Program ⏩</a></h3>
       <input type="hidden" id="referral"/>
 
@@ -69,8 +69,8 @@
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 10) {
-        amountInput.value = 10;
+    if (value < 100) {
+        amountInput.value = 100;
     } else if (value > 1000) {
         amountInput.value = 1000;
     }
