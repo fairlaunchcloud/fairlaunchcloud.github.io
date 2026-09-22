@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'PoinChain (POIN) Development Partnership Program',
-        description: 'Tokenization of Community-Based Applications',
+        name: 'PoinCash (POS) Converter For Burning',
+        description: 'PoinCash Converter Tools',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/Poinchain-DePIN/poin.png']
+        icons: ['https://fairlaunch.vip/PoincashBurn/pos.png']
     }
 });
 
@@ -85,11 +85,11 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "Poinchain-DePIN";
-const contractAddress = "0x37c0B136cd558166cD08e6F5408DFEF883CBEC5A";
+const LINKSHORT = "PoincashBurn";
+const contractAddress = "0x836F54e849fB58ad32057f36fbD71b68A5f66CAc";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (GOIDR)
+    PAYTOKENA: "0x15F0921f024011bB881Cf1A95a9D62897fdf102e", // Contract ID token POINCASH (POS)
     PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
     PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="poin.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="pos.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
