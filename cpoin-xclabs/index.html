@@ -21,8 +21,9 @@
       <img src="redeem.png" style="width: 12%;" />
       <img src="xpool.png" style="width: 18%;" />
     </div>
-    <span><br><a style="color: snow;">CLABS COFFEE FOR XCV :<br>| Price Offer : |<br> 01 SEPTEMBER 2026 - 30 SEPTEMBER 2026<br>
-    <span><br><a style="color: aqua;">XPOOL RATIO FROM CPOIN-X :<br>( 1 XPOOL = 40 CPOIN-X )</a><br><br>
+    <span><a style="color: snow;">CLABS COFFEE FOR XCV :<br>| Price Offer : |<br> 01 OKTOBER 2026 - 31 OKTOBER 2026
+    <span><br><a style="color: yellow;">( Next Price XCV : 1 XPOOL = 64 CPOIN-X )</a><br>
+    <span><br><a style="color: aqua;">XPOOL RATIO FROM CPOIN-X :<br>( 1 XPOOL = 50 CPOIN-X )</a><br><br>
     <span>Contract Address :<br><div id="contractFairlaunch"></div></span>
     <div id="referralLinkContainer" style="display: none;">
         <p>Your Referral Link:</p>
@@ -35,7 +36,7 @@
       </div>
     <div class="form">
       <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount" min="40" max="8000" onblur="validateAmount()"/>
+      <input type="number" id="amount" placeholder="Enter amount" min="50" max="10000" onblur="validateAmount()"/>
 
       <label for="token">Token:</label>
       <select id="token">
@@ -72,10 +73,10 @@
     let amountInput = document.getElementById("amount");
     let value = parseInt(amountInput.value);
 
-    if (value < 40) {
-        amountInput.value = 40;
-    } else if (value > 8000) {
-        amountInput.value = 8000;
+    if (value < 50) {
+        amountInput.value = 50;
+    } else if (value > 10000) {
+        amountInput.value = 10000;
     }
     }
     </script>
