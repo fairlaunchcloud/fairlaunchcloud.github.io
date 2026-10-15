@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   top: 1% !important;
-  background-image: url('https://media.giphy.com/media/3o6fJ1JHgh4Xw4hoK4/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-image: url('https://media.giphy.com/media/2PL2ikbz6hGtzLIqtE/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body {
   font-family: 'Poppins', sans-serif;
   top: 1% !important;
 
-  background-image: url('https://media.giphy.com/media/V57jUkC3eZFsym7iwE/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+  background-image: url('https://media.giphy.com/media/h2BnSAMxbUbWfLol7J/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ body {
   max-width: 400px;
   width: 100%;
   text-align: center;
-    color: whitesmoke;
+    color: khaki;
   }
   
   h1 {
@@ -72,7 +72,7 @@ body {
   
   button {
     padding: 10px;
-    background-color: aqua;
+    background-color: lightskyblue;
     color: black;
     border: none;
     border-radius: 7px;
@@ -141,7 +141,7 @@ body {
   
   .copy-icon {
     font-size: 16px;
-    background: aqua;
+    background: lightskyblue;
     border-radius: 10px;
     padding: 10px;
   }
@@ -226,7 +226,7 @@ body {
     top: 1% !important;
     background:transparent;
   
-    background-image: url('https://media.giphy.com/media/3o6fJ1JHgh4Xw4hoK4/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-image: url('https://media.giphy.com/media/2PL2ikbz6hGtzLIqtE/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -251,7 +251,7 @@ body {
     top: 1% !important;
     
   
-    background-image: url('https://media.giphy.com/media/V57jUkC3eZFsym7iwE/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
+    background-image: url('https://media.giphy.com/media/h2BnSAMxbUbWfLol7J/giphy.gif?cid=ecf05e47xt6mcjc4euybna5fo72bmn2il19bjf9esq5jjcdw&ep=v1_gifs_search&rid=giphy.gif&ct=g'); /* Ganti 'background.gif' dengan nama file gambar bergerak Anda */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -266,7 +266,7 @@ body {
     max-width: 320px;
     width: 100%;
     text-align: center;
-    color: whitesmoke;
+    color: khaki;
   }
 
   h1 {
