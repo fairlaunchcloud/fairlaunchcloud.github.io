@@ -86,7 +86,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
 });
 
 const LINKSHORT = "PoinEquity";
-const contractAddress = "0x37c0B136cd558166cD08e6F5408DFEF883CBEC5A";
+const contractAddress = "0x43Ec65d20666aF03fffc7a07b9Ab79e0112d12a1";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F", // Contract ID token Payment (GOIDR)
@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0xb4D6304589D5b4Dd8C5a4171933275d3e0A99C27";
+const DEFAULT_REFERRAL_ADDRESS = "0x43Ec65d20666aF03fffc7a07b9Ab79e0112d12a1";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
