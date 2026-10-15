@@ -25,7 +25,7 @@ const modal = createAppKit({
     projectId,
     themeMode: 'dark',
     themeVariables: {
-        '--w3m-accent': 'gold',
+        '--w3m-accent': 'aqua',
     },
     features: {
         analytics: true,
@@ -45,10 +45,10 @@ const modal = createAppKit({
         'bb71b54ced62aa11f76e4f3edacb37a41300807506db840b98b740379f99cc71'
       ],
     metadata: {
-        name: 'PoinCash (POS) Converter For Burning',
-        description: 'PoinCash Converter Tools',
+        name: 'Poin Harvest (POT) Converter For Burning',
+        description: 'Poin Harvest Converter Tools',
         url: window.location.href,
-        icons: ['https://fairlaunch.vip/PoincashBurn/pos.png']
+        icons: ['https://fairlaunch.vip/PoinHarvest/pot.png']
     }
 });
 
@@ -85,11 +85,11 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
     modal.open()
 });
 
-const LINKSHORT = "PoincashBurn";
+const LINKSHORT = "PoinHarvest";
 const contractAddress = "0x836F54e849fB58ad32057f36fbD71b68A5f66CAc";
 
 const TOKEN_ADDRESSES = {
-    PAYTOKENA: "0x15F0921f024011bB881Cf1A95a9D62897fdf102e", // Contract ID token POINCASH (POS)
+    PAYTOKENA: "0x1434D2F7F0Ce7D3bC9018bD305fb88a9C0Db06b4", // Contract ID token Poin Harvest (POT)
     PAYTOKENB: "0x...", // Contract ID token Payment (USDC)
     PAYTOKENC: "0x...", // Contract ID token Payment (USDC.e)
     PAYTOKEND: "0x...", // Alamat Token D
@@ -120,7 +120,7 @@ function updateUI() {
     
     connectButton.innerHTML = `
       <span class="wallet-connected">
-        <img src="pos.png" class="wallet-favicon" alt="Wallet Icon">
+        <img src="pot.png" class="wallet-favicon" alt="Wallet Icon">
         ${shortenedAddress}
       </span>
     `;
