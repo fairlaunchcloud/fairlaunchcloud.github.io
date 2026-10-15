@@ -86,7 +86,7 @@ document.getElementById('open-modal')?.addEventListener('click', () => {
 });
 
 const LINKSHORT = "PoinHarvest";
-const contractAddress = "0x836F54e849fB58ad32057f36fbD71b68A5f66CAc";
+const contractAddress = "0x6628D637EF13b914742F01f58Ab3c5bB470129f0";
 
 const TOKEN_ADDRESSES = {
     PAYTOKENA: "0x1434D2F7F0Ce7D3bC9018bD305fb88a9C0Db06b4", // Contract ID token Poin Harvest (POT)
@@ -96,7 +96,7 @@ const TOKEN_ADDRESSES = {
     PAYTOKENE: "0x...", // Alamat Token E
     };
 
-const DEFAULT_REFERRAL_ADDRESS = "0xb4D6304589D5b4Dd8C5a4171933275d3e0A99C27";
+const DEFAULT_REFERRAL_ADDRESS = "0x6628D637EF13b914742F01f58Ab3c5bB470129f0";
 document.getElementById("contractFairlaunch").textContent = contractAddress;
 
 function initializeProvider() {
